@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://docl86cspktnp"]
+
+[ext_resource type="Texture2D" uid="uid://dgn0jyu03mral" path="res://assets/imgs/loading.png" id="1_h0sde"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ycgy"]
+atlas = ExtResource("1_h0sde")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7krkx"]
+atlas = ExtResource("1_h0sde")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6do7"]
+atlas = ExtResource("1_h0sde")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_thh8i"]
+atlas = ExtResource("1_h0sde")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6361"]
+atlas = ExtResource("1_h0sde")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3vglh"]
+atlas = ExtResource("1_h0sde")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1n7lv"]
+atlas = ExtResource("1_h0sde")
+region = Rect2(600, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mkirn"]
+atlas = ExtResource("1_h0sde")
+region = Rect2(700, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gwdd4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ycgy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7krkx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u6do7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_thh8i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6361")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3vglh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1n7lv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mkirn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="LoadingScreen" type="Node2D" unique_id=1593271240]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=218843546]
+position = Vector2(592, 286)
+sprite_frames = SubResource("SpriteFrames_gwdd4")
+frame_progress = 0.49381462
