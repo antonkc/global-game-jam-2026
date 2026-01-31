@@ -1,13 +1,20 @@
 [gd_scene format=3 uid="uid://c656ccj3d44xu"]
 
+[ext_resource type="Texture2D" uid="uid://cjep68f3n06hi" path="res://assets/imgs/papiro.png" id="1_pkx4w"]
+
 [node name="Dialog" type="Node2D" unique_id=611022932]
 
-[node name="dialogo" type="Panel" parent="." unique_id=1984473227]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1151365669]
+position = Vector2(709.50006, 890.5)
+scale = Vector2(1.4735202, 0.6295681)
+texture = ExtResource("1_pkx4w")
+
+[node name="dialogo" type="Panel" parent="." unique_id=265096378]
 offset_top = 701.0
 offset_right = 1419.0
 offset_bottom = 1080.0
 
-[node name="RichTextLabel" type="RichTextLabel" parent="dialogo" unique_id=1189136243]
+[node name="RichTextLabel" type="RichTextLabel" parent="dialogo" unique_id=376941216]
 layout_mode = 0
 offset_top = 71.0
 offset_right = 1419.0
@@ -15,23 +22,23 @@ offset_bottom = 378.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 scroll_active = false
 
-[node name="Label" type="Label" parent="dialogo" unique_id=36441969]
+[node name="Label" type="Label" parent="dialogo" unique_id=786225876]
 layout_mode = 0
 offset_right = 1419.0
 offset_bottom = 68.0
 
-[node name="npc" type="Panel" parent="." unique_id=1359022525]
+[node name="npc" type="Panel" parent="." unique_id=1941624826]
 offset_right = 1920.0
 offset_bottom = 700.0
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc" unique_id=1725342980]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc" unique_id=1191055196]
 position = Vector2(960, 383)
 
-[node name="pc" type="Panel" parent="." unique_id=806034908]
+[node name="pc" type="Panel" parent="." unique_id=1297005100]
 offset_left = 1420.0
 offset_top = 701.0
 offset_right = 1920.0
 offset_bottom = 1080.0
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="pc" unique_id=271095185]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="pc" unique_id=1077795740]
 position = Vector2(256, 185)
