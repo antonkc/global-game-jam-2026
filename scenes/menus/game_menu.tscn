@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cj07nolh0qk1g"]
+
+[node name="Menu" type="Node2D" unique_id=981705562]
+
+[node name="Label" type="Label" parent="." unique_id=2102666651]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 422.0
+offset_top = 307.0
+offset_right = 631.0
+offset_bottom = 375.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "home_play"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label2" type="Label" parent="." unique_id=896662242]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 422.0
+offset_top = 375.0
+offset_right = 631.0
+offset_bottom = 443.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "home_settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label3" type="Label" parent="." unique_id=1211690656]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 422.0
+offset_top = 443.0
+offset_right = 631.0
+offset_bottom = 511.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "home_quit"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ctcw36jre2l6o"]
+
+[ext_resource type="Script" uid="uid://cbns0ido6iaty" path="res://scripts/ui/text_panel.gd" id="1_xy455"]
+
+[node name="TextPanel" type="Node2D" unique_id=1749774778]
+script = ExtResource("1_xy455")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1004025968]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="MarginContainer" unique_id=94003979]
+layout_mode = 2

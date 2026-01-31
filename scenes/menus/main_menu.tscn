@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dqef6kplukcj8"]
+
+[node name="Menu" type="Node2D" unique_id=981705562]
+
+[node name="panel" type="Panel" parent="." unique_id=1434525141]
+offset_left = 278.0
+offset_top = 175.0
+offset_right = 855.3457
+offset_bottom = 499.0
+
+[node name="button" type="Panel" parent="panel" unique_id=229037226]
+layout_mode = 0
+offset_top = 54.0
+offset_right = 577.0
+offset_bottom = 122.0
+
+[node name="play" type="Label" parent="panel" unique_id=2102666651]
+layout_mode = 0
+offset_top = 54.0
+offset_right = 577.0
+offset_bottom = 122.0
+text = "menu_play"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="settings" type="Label" parent="panel" unique_id=896662242]
+layout_mode = 0
+offset_top = 122.0
+offset_right = 577.0
+offset_bottom = 190.0
+text = "menu_settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="quit" type="Label" parent="panel" unique_id=1211690656]
+layout_mode = 0
+offset_top = 190.0
+offset_right = 577.0
+offset_bottom = 258.0
+text = "menu_quit"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
