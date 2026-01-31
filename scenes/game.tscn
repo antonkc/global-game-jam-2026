@@ -5,7 +5,79 @@
 [ext_resource type="PackedScene" uid="uid://cbuqg7q60xka2" path="res://scenes/menus/inventory.tscn" id="3_p57ef"]
 [ext_resource type="PackedScene" uid="uid://c656ccj3d44xu" path="res://scenes/dialog.tscn" id="4_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://jdng8gy7pbo5" path="res://scenes/location.tscn" id="5_gee14"]
+[ext_resource type="Texture2D" uid="uid://dgn0jyu03mral" path="res://assets/imgs/loading.png" id="6_gee14"]
 [ext_resource type="PackedScene" uid="uid://cj07nolh0qk1g" path="res://scenes/menus/game_menu.tscn" id="6_p57ef"]
+[ext_resource type="Script" uid="uid://cglusxm2trbue" path="res://scenes/slide_in_scene.gd" id="6_u5sy4"]
+[ext_resource type="Script" uid="uid://c2nvn5lfwvy6x" path="res://scenes/atropello.gd" id="6_vtaks"]
+[ext_resource type="Script" uid="uid://bjsqd0jfocukr" path="res://scenes/abuela_crash.gd" id="8_0tnpc"]
+[ext_resource type="Script" uid="uid://tqbijymfy85r" path="res://scenes/abuela_falling.gd" id="9_vtaks"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0tnpc"]
+atlas = ExtResource("6_gee14")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vtaks"]
+atlas = ExtResource("6_gee14")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kvpfn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0tnpc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtaks")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kvpfn"]
+atlas = ExtResource("6_gee14")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dinhu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kvpfn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dinhu"]
+atlas = ExtResource("6_gee14")
+region = Rect2(600, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kvuet"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dinhu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_trtic"]
+atlas = ExtResource("6_gee14")
+region = Rect2(700, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ir15t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_trtic")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Game" type="Node2D" unique_id=742799620]
 script = ExtResource("1_uwrxv")
@@ -21,6 +93,47 @@ visible = false
 visible = false
 
 [node name="Location" parent="." unique_id=1670313935 instance=ExtResource("5_gee14")]
+
+[node name="stage_background" type="Sprite2D" parent="Location" unique_id=1066139540]
+
+[node name="atropello" type="Node2D" parent="Location/stage_background" unique_id=820692103]
+script = ExtResource("6_vtaks")
+
+[node name="coche_crash" type="AnimatedSprite2D" parent="Location/stage_background/atropello" unique_id=1243296457]
+sprite_frames = SubResource("SpriteFrames_kvpfn")
+frame_progress = 0.54817086
+script = ExtResource("6_u5sy4")
+
+[node name="abuela" type="AnimatedSprite2D" parent="Location/stage_background/atropello" unique_id=418450649]
+sprite_frames = SubResource("SpriteFrames_dinhu")
+
+[node name="abuela_falling" type="AnimatedSprite2D" parent="Location/stage_background/atropello" unique_id=208115546]
 visible = false
+sprite_frames = SubResource("SpriteFrames_kvuet")
+script = ExtResource("9_vtaks")
+
+[node name="abuela_crash" type="AnimatedSprite2D" parent="Location/stage_background/atropello" unique_id=847077771]
+visible = false
+sprite_frames = SubResource("SpriteFrames_ir15t")
+script = ExtResource("8_0tnpc")
+
+[node name="policia1" type="AnimatedSprite2D" parent="Location/stage_background/atropello" unique_id=251259106]
+
+[node name="policia2" type="AnimatedSprite2D" parent="Location/stage_background/atropello" unique_id=1478623845]
+
+[node name="ambulancia" type="AnimatedSprite2D" parent="Location/stage_background/atropello" unique_id=2415604]
+
+[node name="coche_poli" type="AnimatedSprite2D" parent="Location/stage_background/atropello" unique_id=650958198]
+
+[node name="gente" type="AnimatedSprite2D" parent="Location/stage_background/atropello" unique_id=450571285]
+
+[node name="tienda" type="AnimatedSprite2D" parent="Location/stage_background/atropello" unique_id=1103131307]
 
 [node name="Menu" parent="." unique_id=358669565 instance=ExtResource("6_p57ef")]
+visible = false
+
+[node name="Location_Inicial" type="Node2D" parent="." unique_id=180476403]
+
+[node name="espectadores" type="Sprite2D" parent="Location_Inicial" unique_id=1700318219]
+
+[node name="stage" type="AnimatedSprite2D" parent="Location_Inicial" unique_id=1008023649]
