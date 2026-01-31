@@ -2,16 +2,21 @@ extends Node
 
 @onready var main: Node2D = $"../../main"
 @onready var credits: Node2D = $"../../credits"
+@onready var settings: Node2D = $"../../settings"
 
 @export var input_names: Array[String] = []
 @export var is_input_focused: bool = false
 var mouse_on: bool = false
 
+@onready var others = [
+	credits,
+	settings,
+]
+
 func action()->void:
-	main.show()
+	for other in others:
+		FocusHelper.set_focused(other, false)
 	FocusHelper.set_focused(main, true)
-	credits.hide()
-	FocusHelper.set_focused(credits, false)
 
 func _input(event: InputEvent) -> void:
 	if !is_input_focused:

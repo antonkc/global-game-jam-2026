@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ckjrcryhv4kdl"]
 
-[ext_resource type="Script" uid="uid://btj51uq5vjhk0" path="res://scripts/utils/main_menu/set_focused.gd" id="1_p63pe"]
+[ext_resource type="Script" uid="uid://btj51uq5vjhk0" path="res://scripts/utils/main_menu/FocusHelper.gd" id="1_p63pe"]
 
 [node name="Focuser" type="Node2D" unique_id=861303521]
 script = ExtResource("1_p63pe")

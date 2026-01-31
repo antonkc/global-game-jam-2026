@@ -3,7 +3,10 @@
 [ext_resource type="Script" uid="uid://dskc2g8uponn5" path="res://scripts/ui/main_menu.gd" id="1_ovrgc"]
 [ext_resource type="Script" uid="uid://c6ptd84s485iw" path="res://scripts/utils/main_menu/butt_quit.gd" id="1_xqga4"]
 [ext_resource type="Script" uid="uid://bf8bnspe240bp" path="res://scripts/utils/main_menu/butt_credits.gd" id="2_2o76q"]
+[ext_resource type="Script" uid="uid://be3c7sg7eyi4u" path="res://scripts/utils/main_menu/butt_settings.gd" id="2_imvie"]
 [ext_resource type="Script" uid="uid://cuupeug1ef1lt" path="res://scripts/utils/main_menu/butt_back.gd" id="4_6bivr"]
+[ext_resource type="Script" uid="uid://nt1u4kjf47au" path="res://scripts/utils/main_menu/lang_selector.gd" id="6_8r73w"]
+[ext_resource type="Script" uid="uid://c6323l4m3n44e" path="res://scripts/utils/main_menu/audio_slider.gd" id="6_ng0o5"]
 
 [node name="MainMenu" type="Node2D" unique_id=981705562]
 script = ExtResource("1_ovrgc")
@@ -45,6 +48,9 @@ offset_left = 278.0
 offset_top = 289.0
 offset_right = 855.0
 offset_bottom = 357.0
+script = ExtResource("2_imvie")
+input_names = Array[String](["option_3"])
+is_input_focused = true
 
 [node name="label" type="Label" parent="main/butt_settings" unique_id=906258512]
 layout_mode = 0
@@ -112,9 +118,228 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
+[node name="settings" type="Node2D" parent="." unique_id=758247651]
+visible = false
+
+[node name="lang" type="Panel" parent="settings" unique_id=1946664484]
+offset_left = 278.0
+offset_top = 47.0
+offset_right = 855.0
+offset_bottom = 113.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("6_8r73w")
+
+[node name="Label" type="Label" parent="settings/lang" unique_id=1768719636]
+layout_mode = 0
+offset_right = 119.0
+offset_bottom = 66.0
+text = "home_cfg_lang"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="OptionButton" type="OptionButton" parent="settings/lang" unique_id=845644312]
+layout_mode = 0
+offset_left = 119.0
+offset_right = 577.0
+offset_bottom = 66.0
+
+[node name="audio" type="Panel" parent="settings" unique_id=1103628840]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 278.0
+offset_top = 137.0
+offset_right = 855.0
+offset_bottom = 541.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="master" type="Panel" parent="settings/audio" unique_id=849716231]
+layout_mode = 0
+offset_top = 3.0
+offset_right = 577.0
+offset_bottom = 69.0
+script = ExtResource("6_ng0o5")
+bus_name = "Master"
+
+[node name="Label" type="Label" parent="settings/audio/master" unique_id=1126945649]
+layout_mode = 0
+offset_right = 119.0
+offset_bottom = 66.0
+text = "home_cfg_audio_master"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="HSlider" type="HSlider" parent="settings/audio/master" unique_id=1622992970]
+layout_mode = 0
+offset_left = 119.0
+offset_right = 577.0
+offset_bottom = 66.0
+value = 90.0
+
+[node name="voice" type="Panel" parent="settings/audio" unique_id=766408207]
+layout_mode = 0
+offset_top = 68.0
+offset_right = 577.0
+offset_bottom = 134.0
+script = ExtResource("6_ng0o5")
+bus_name = "Voice"
+
+[node name="Label" type="Label" parent="settings/audio/voice" unique_id=1435044130]
+layout_mode = 0
+offset_right = 119.0
+offset_bottom = 66.0
+text = "home_cfg_audio_voice"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="HSlider" type="HSlider" parent="settings/audio/voice" unique_id=1710090221]
+layout_mode = 0
+offset_left = 119.0
+offset_right = 577.0
+offset_bottom = 66.0
+value = 90.0
+
+[node name="sfx" type="Panel" parent="settings/audio" unique_id=1927912354]
+layout_mode = 0
+offset_top = 136.0
+offset_right = 577.0
+offset_bottom = 202.0
+script = ExtResource("6_ng0o5")
+bus_name = "Sfx"
+
+[node name="Label" type="Label" parent="settings/audio/sfx" unique_id=1910734534]
+layout_mode = 0
+offset_right = 119.0
+offset_bottom = 66.0
+text = "home_cfg_audio_sfx"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="HSlider" type="HSlider" parent="settings/audio/sfx" unique_id=408798772]
+layout_mode = 0
+offset_left = 119.0
+offset_right = 577.0
+offset_bottom = 66.0
+value = 90.0
+
+[node name="music" type="Panel" parent="settings/audio" unique_id=808521972]
+layout_mode = 0
+offset_top = 202.0
+offset_right = 577.0
+offset_bottom = 268.0
+script = ExtResource("6_ng0o5")
+bus_name = "Music"
+
+[node name="Label" type="Label" parent="settings/audio/music" unique_id=934035800]
+layout_mode = 0
+offset_right = 119.0
+offset_bottom = 66.0
+text = "home_cfg_audio_music"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="HSlider" type="HSlider" parent="settings/audio/music" unique_id=1768633852]
+layout_mode = 0
+offset_left = 119.0
+offset_right = 577.0
+offset_bottom = 66.0
+value = 90.0
+
+[node name="ambient" type="Panel" parent="settings/audio" unique_id=145279278]
+layout_mode = 0
+offset_top = 272.0
+offset_right = 577.0
+offset_bottom = 338.0
+script = ExtResource("6_ng0o5")
+bus_name = "Ambient"
+
+[node name="Label" type="Label" parent="settings/audio/ambient" unique_id=1621179159]
+layout_mode = 0
+offset_right = 119.0
+offset_bottom = 66.0
+text = "home_cfg_audio_ambient"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="HSlider" type="HSlider" parent="settings/audio/ambient" unique_id=656584746]
+layout_mode = 0
+offset_left = 119.0
+offset_right = 577.0
+offset_bottom = 66.0
+value = 90.0
+
+[node name="alerts" type="Panel" parent="settings/audio" unique_id=1391249410]
+layout_mode = 0
+offset_top = 338.0
+offset_right = 577.0
+offset_bottom = 404.0
+script = ExtResource("6_ng0o5")
+bus_name = "Alerts"
+
+[node name="Label" type="Label" parent="settings/audio/alerts" unique_id=450856658]
+layout_mode = 0
+offset_right = 119.0
+offset_bottom = 66.0
+text = "home_cfg_audio_alerts"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="HSlider" type="HSlider" parent="settings/audio/alerts" unique_id=1562194472]
+layout_mode = 0
+offset_left = 119.0
+offset_right = 577.0
+offset_bottom = 66.0
+value = 90.0
+
+[node name="butt_back" type="Panel" parent="settings" unique_id=885641074]
+offset_left = 278.0
+offset_top = 562.0
+offset_right = 855.0
+offset_bottom = 630.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("4_6bivr")
+input_names = Array[String](["option_1", "ui_close_dialog"])
+is_input_focused = true
+
+[node name="label" type="Label" parent="settings/butt_back" unique_id=1327340498]
+layout_mode = 0
+offset_right = 577.0
+offset_bottom = 68.0
+text = "home_back"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[connection signal="draw" from="." to="." method="_on_draw"]
+[connection signal="hidden" from="." to="." method="_on_hidden"]
+[connection signal="mouse_entered" from="main/butt_settings" to="main/butt_settings" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="main/butt_settings" to="main/butt_settings" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="main/butt_credits" to="main/butt_credits" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="main/butt_credits" to="main/butt_credits" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="main/butt_quit" to="main/butt_quit" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="main/butt_quit" to="main/butt_quit" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="credits/butt_back" to="credits/butt_back" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="credits/butt_back" to="credits/butt_back" method="_on_mouse_exited"]
+[connection signal="item_selected" from="settings/lang/OptionButton" to="settings/lang" method="_on_option_button_item_selected"]
+[connection signal="value_changed" from="settings/audio/master/HSlider" to="settings/audio/master" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="settings/audio/voice/HSlider" to="settings/audio/voice" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="settings/audio/sfx/HSlider" to="settings/audio/sfx" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="settings/audio/music/HSlider" to="settings/audio/music" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="settings/audio/ambient/HSlider" to="settings/audio/ambient" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="settings/audio/alerts/HSlider" to="settings/audio/alerts" method="_on_h_slider_value_changed"]
+[connection signal="mouse_entered" from="settings/butt_back" to="settings/butt_back" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="settings/butt_back" to="settings/butt_back" method="_on_mouse_exited"]

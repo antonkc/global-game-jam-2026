@@ -64,7 +64,7 @@ window/size/viewport_height=1080
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://assets/lang/en.po", "res://assets/lang/es-ES.po")
+locale/translations=PackedStringArray("res://assets/lang/en.po", "res://assets/lang/es_ES.po")
 
 [rendering]
 

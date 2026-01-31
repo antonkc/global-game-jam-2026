@@ -10,13 +10,14 @@ var mouse_on: bool = false
 
 @onready var others = [
 	main,
-	settings,
+	credits,
 ]
 
 func action()->void:
 	for other in others:
+		other.hide()
 		FocusHelper.set_focused(other, false)
-	FocusHelper.set_focused(credits, true)
+	FocusHelper.set_focused(settings, true)
 
 func _input(event: InputEvent) -> void:
 	if !is_input_focused:

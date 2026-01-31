@@ -1,7 +1,13 @@
 extends Node
 class_name FocusHelper
 
-static func set_focused(node: Node, focused: bool)->void:
+static func set_focused(node: Node2D, focused: bool, should_toggle_visibility: bool = true)->void:
+	if should_toggle_visibility:
+		if focused:
+			node.show()
+		else:
+			node.hide()
+
 	var buttons: Array[Node] = node.find_children("butt_*", "Panel", true)
 	
 	for butt in buttons:
