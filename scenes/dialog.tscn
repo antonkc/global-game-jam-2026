@@ -1,3 +1,37 @@
 [gd_scene format=3 uid="uid://c656ccj3d44xu"]
 
 [node name="Dialog" type="Node2D" unique_id=611022932]
+
+[node name="dialogo" type="Panel" parent="." unique_id=1984473227]
+offset_top = 701.0
+offset_right = 1419.0
+offset_bottom = 1080.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="dialogo" unique_id=1189136243]
+layout_mode = 0
+offset_top = 71.0
+offset_right = 1419.0
+offset_bottom = 378.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+scroll_active = false
+
+[node name="Label" type="Label" parent="dialogo" unique_id=36441969]
+layout_mode = 0
+offset_right = 1419.0
+offset_bottom = 68.0
+
+[node name="npc" type="Panel" parent="." unique_id=1359022525]
+offset_right = 1920.0
+offset_bottom = 700.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc" unique_id=1725342980]
+position = Vector2(960, 383)
+
+[node name="pc" type="Panel" parent="." unique_id=806034908]
+offset_left = 1420.0
+offset_top = 701.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="pc" unique_id=271095185]
+position = Vector2(256, 185)

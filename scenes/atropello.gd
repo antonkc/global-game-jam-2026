@@ -4,8 +4,10 @@ extends Node2D
 @onready var abuela: AnimatedSprite2D = $abuela
 @onready var abuela_falling: AnimatedSprite2D = $abuela_falling
 @onready var abuela_crash: AnimatedSprite2D = $abuela_crash
+@onready var policia_2: AnimatedSprite2D = $policia2
 
 var timer := 0.0
+var en_escena := true
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -30,3 +32,4 @@ func _process(delta: float) -> void:
 			abuela_crash.visible = true
 		if timer >= 2.0:
 			coche_crash.speed = 10.0
+	
