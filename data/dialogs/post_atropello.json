@@ -4,13 +4,15 @@
 			"text": "dia4_entry1",
 			"name": "Ali",
 			"speaker": "",
-			"cond": []
+			"cond": [""],
+			"resp": []
 		},
 		{
 			"text": "dia4_entry2",
 			"name": "Ali",
 			"speaker": "",
-			"cond": []
+			"cond": [""],
+			"resp": []
 		},
 		{
 			"text": "dia4_entry3",
@@ -20,7 +22,19 @@
 			"resp": [
 				{
 					"text": "dia4_entry3_resp1",
-					"eff": ""
+					"eff": "a"
+				},
+				{
+					"text": "dia4_entry3_resp2",
+					"eff": "b"
+				},
+				{
+					"text": "dia4_entry3_resp2",
+					"eff": "c"
+				},
+				{
+					"text": "dia4_entry3_resp2",
+					"eff": "d"
 				}
 			]
 		},
@@ -28,49 +42,51 @@
 			"text": "dia4_entry4",
 			"name": "Ali",
 			"speaker": "",
-			"cond": []
+			"cond": ["a"],
+			"resp": []
 		},
 		{
-			"text": "dia4_entry5",
+			"text": "dia4_entry",
 			"name": "Ali",
 			"speaker": "",
-			"cond": []
+			"cond": ["b"],
+			"resp": []
 		},
 		{
-			"text": "dia4_entry6",
+			"text": "dia4_entry",
 			"name": "Ali",
 			"speaker": "",
-			"cond": []
+			"cond": ["c"],
+			"resp": []
 		},
 		{
-			"text": "dia4_entry7",
+			"text": "dia4_entry",
 			"name": "Ali",
 			"speaker": "",
-			"cond": [],
-			"resp": [
-				{
-					"text": "dia4_entry7_resp1"
-				}
-			]
+			"cond": ["d"],
+			"resp": []
 			
 		},
 		{
-			"text": "dia4_entry8",
+			"text": "dia4_entry",
 			"name": "Ali",
 			"speaker": "",
-			"cond": []
+			"cond": [""],
+			"resp": []
 		},
 		{
-			"text": "dia4_entry9",
+			"text": "dia4_entry",
 			"name": "Ali",
 			"speaker": "",
-			"cond": []
+			"cond": [""],
+			"resp": []
 		},
 		{
 			"text": "dia4_entry10",
 			"name": "Ali",
 			"speaker": "",
-			"cond": []
+			"cond": [""],
+			"resp": []
 		}
 
 	]
