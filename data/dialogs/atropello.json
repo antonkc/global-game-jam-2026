@@ -1,55 +1,61 @@
 {
-	"propset": "atropello",
+	"propset": "",
 	"dialog": [ {
-			"text": "dia1_entry1",
+			"text": "dia2_entry1",
 			"name": "Ali",
 			"speaker": "",
 			"cond": []
 		},
 		{
-			"text": "dia1_entry2",
+			"text": "dia2_entry2",
 			"name": "Ali",
 			"speaker": "",
 			"cond": []
 		},
 		{
-			"text": "dia1_entry3",
+			"text": "dia2_entry3",
 			"name": "Ali",
 			"speaker": "",
 			"cond": []
 		},
 		{
-			"text": "dia1_entry4",
+			"text": "dia2_entry4",
 			"name": "Ali",
 			"speaker": "",
 			"cond": []
 		},
 		{
-			"text": "dia1_entry5",
+			"text": "dia2_entry5",
 			"name": "Ali",
 			"speaker": "",
 			"cond": []
 		},
 		{
-			"text": "dia1_entry6",
+			"text": "dia2_entry6",
 			"name": "Ali",
 			"speaker": "",
 			"cond": []
 		},
 		{
-			"text": "dia1_entry7",
+			"text": "dia2_entry7",
 			"name": "Ali",
 			"speaker": "",
 			"cond": []
 		},
 		{
-			"text": "dia1_entry8",
+			"text": "dia2_entry8",
 			"name": "Ali",
 			"speaker": "",
 			"cond": []
 		},
 		{
-			"text": "dia1_entry9",
+			"text": "dia2_entry9",
+			"name": "Ali",
+			"speaker": "",
+			"cond": []
+		},
+		{
+			"text": "dia2_entry10",
 			"name": "Ali",
 			"speaker": "",
 			"cond": []
