@@ -101,3 +101,10 @@ msgid "dia4_entry3_resp3"
 msgstr "c. Perseguir al coche"
 msgid "dia4_entry3_resp4"
 msgstr "d. Abandonar"
+
+#### Lhen ####
+
+#### /Lhen ####
+#### Gemma ####
+
+#### /Gemma ####
