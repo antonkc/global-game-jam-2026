@@ -1,54 +1,63 @@
 [gd_scene format=3 uid="uid://cj07nolh0qk1g"]
 
-[node name="Menu" type="Node2D" unique_id=981705562]
+[node name="GameMenu" type="Node2D" unique_id=981705562]
 
-[node name="Label" type="Label" parent="." unique_id=2102666651]
+[node name="panel" type="Panel" parent="." unique_id=541765457]
+offset_left = 278.0
+offset_top = 175.0
+offset_right = 855.3457
+offset_bottom = 499.0
+
+[node name="play" type="Label" parent="panel" unique_id=2102666651]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 422.0
-offset_top = 307.0
-offset_right = 631.0
-offset_bottom = 375.0
+offset_left = -110.67285
+offset_top = -99.0
+offset_right = 98.32715
+offset_bottom = -31.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "home_play"
+text = "menu_play"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Label2" type="Label" parent="." unique_id=896662242]
+[node name="settings" type="Label" parent="panel" unique_id=896662242]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 422.0
-offset_top = 375.0
-offset_right = 631.0
-offset_bottom = 443.0
+offset_left = -110.67285
+offset_top = -31.0
+offset_right = 98.32715
+offset_bottom = 37.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "home_settings"
+text = "menu_settings"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Label3" type="Label" parent="." unique_id=1211690656]
+[node name="quit" type="Label" parent="panel" unique_id=1211690656]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 422.0
-offset_top = 443.0
-offset_right = 631.0
-offset_bottom = 511.0
+offset_left = -110.67285
+offset_top = 37.0
+offset_right = 98.32715
+offset_bottom = 105.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "home_quit"
+text = "menu_quit"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3

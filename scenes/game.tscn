@@ -10,9 +10,11 @@
 [node name="Game" type="Node2D" unique_id=742799620]
 script = ExtResource("1_uwrxv")
 
-[node name="GameMenu" parent="." unique_id=981705562 instance=ExtResource("2_iywne")]
-visible = false
+[node name="MainMenu" parent="." unique_id=981705562 instance=ExtResource("2_iywne")]
 top_level = true
+
+[node name="GameMenu" parent="." unique_id=358669565 instance=ExtResource("6_p57ef")]
+visible = false
 
 [node name="Inventory" parent="." unique_id=1494187961 instance=ExtResource("3_p57ef")]
 visible = false
@@ -22,5 +24,3 @@ visible = false
 
 [node name="Location" parent="." unique_id=1670313935 instance=ExtResource("5_gee14")]
 visible = false
-
-[node name="Menu" parent="." unique_id=358669565 instance=ExtResource("6_p57ef")]

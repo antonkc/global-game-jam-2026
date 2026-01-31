@@ -1,45 +1,120 @@
 [gd_scene format=3 uid="uid://dqef6kplukcj8"]
 
-[node name="Menu" type="Node2D" unique_id=981705562]
+[ext_resource type="Script" uid="uid://dskc2g8uponn5" path="res://scripts/ui/main_menu.gd" id="1_ovrgc"]
+[ext_resource type="Script" uid="uid://c6ptd84s485iw" path="res://scripts/utils/main_menu/butt_quit.gd" id="1_xqga4"]
+[ext_resource type="Script" uid="uid://bf8bnspe240bp" path="res://scripts/utils/main_menu/butt_credits.gd" id="2_2o76q"]
+[ext_resource type="Script" uid="uid://cuupeug1ef1lt" path="res://scripts/utils/main_menu/butt_back.gd" id="4_6bivr"]
 
-[node name="panel" type="Panel" parent="." unique_id=1434525141]
+[node name="MainMenu" type="Node2D" unique_id=981705562]
+script = ExtResource("1_ovrgc")
+
+[node name="main" type="Node2D" parent="." unique_id=420553248]
+
+[node name="butt_continue" type="Panel" parent="main" unique_id=1668781396]
 offset_left = 278.0
-offset_top = 175.0
-offset_right = 855.3457
-offset_bottom = 499.0
+offset_top = 153.0
+offset_right = 855.0
+offset_bottom = 221.0
 
-[node name="button" type="Panel" parent="panel" unique_id=229037226]
+[node name="label" type="Label" parent="main/butt_continue" unique_id=1831189119]
 layout_mode = 0
-offset_top = 54.0
 offset_right = 577.0
-offset_bottom = 122.0
-
-[node name="play" type="Label" parent="panel" unique_id=2102666651]
-layout_mode = 0
-offset_top = 54.0
-offset_right = 577.0
-offset_bottom = 122.0
-text = "menu_play"
+offset_bottom = 68.0
+text = "home_continue"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="settings" type="Label" parent="panel" unique_id=896662242]
+[node name="butt_create" type="Panel" parent="main" unique_id=1496993343]
+offset_left = 278.0
+offset_top = 221.0
+offset_right = 855.0
+offset_bottom = 289.0
+
+[node name="label" type="Label" parent="main/butt_create" unique_id=1714238478]
 layout_mode = 0
-offset_top = 122.0
 offset_right = 577.0
-offset_bottom = 190.0
-text = "menu_settings"
+offset_bottom = 68.0
+text = "home_create"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="quit" type="Label" parent="panel" unique_id=1211690656]
+[node name="butt_settings" type="Panel" parent="main" unique_id=1049395778]
+offset_left = 278.0
+offset_top = 289.0
+offset_right = 855.0
+offset_bottom = 357.0
+
+[node name="label" type="Label" parent="main/butt_settings" unique_id=906258512]
 layout_mode = 0
-offset_top = 190.0
 offset_right = 577.0
-offset_bottom = 258.0
-text = "menu_quit"
+offset_bottom = 68.0
+text = "home_settings"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
+
+[node name="butt_credits" type="Panel" parent="main" unique_id=1802138319]
+offset_left = 278.0
+offset_top = 357.0
+offset_right = 855.0
+offset_bottom = 425.0
+script = ExtResource("2_2o76q")
+input_names = Array[String](["option_4"])
+is_input_focused = true
+
+[node name="label" type="Label" parent="main/butt_credits" unique_id=1021251733]
+layout_mode = 0
+offset_right = 577.0
+offset_bottom = 68.0
+text = "home_credits"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="butt_quit" type="Panel" parent="main" unique_id=535928728]
+offset_left = 278.0
+offset_top = 425.0
+offset_right = 855.0
+offset_bottom = 493.0
+script = ExtResource("1_xqga4")
+input_names = Array[String](["option_5"])
+is_input_focused = true
+
+[node name="label" type="Label" parent="main/butt_quit" unique_id=184995050]
+layout_mode = 0
+offset_right = 577.0
+offset_bottom = 68.0
+text = "home_quit"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="credits" type="Node2D" parent="." unique_id=665198567]
+visible = false
+
+[node name="butt_back" type="Panel" parent="credits" unique_id=133150650]
+offset_left = 278.0
+offset_top = 562.0
+offset_right = 855.0
+offset_bottom = 630.0
+script = ExtResource("4_6bivr")
+input_names = Array[String](["option_1", "ui_close_dialog"])
+is_input_focused = true
+
+[node name="label" type="Label" parent="credits/butt_back" unique_id=1202113345]
+layout_mode = 0
+offset_right = 577.0
+offset_bottom = 68.0
+text = "home_back"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[connection signal="mouse_entered" from="main/butt_credits" to="main/butt_credits" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="main/butt_credits" to="main/butt_credits" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="main/butt_quit" to="main/butt_quit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="main/butt_quit" to="main/butt_quit" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="credits/butt_back" to="credits/butt_back" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="credits/butt_back" to="credits/butt_back" method="_on_mouse_exited"]
