@@ -57,6 +57,11 @@ click={
 ]
 }
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
 [internationalization]
 
 locale/translations=PackedStringArray("res://assets/lang/en.po", "res://assets/lang/es-ES.po")
