@@ -285,8 +285,7 @@ msgstr "¿Todo bien?"
 msgid "dia9_entry30"
 msgstr "Sí, pero tengo mucho sueño. Buenas noches."
 msgid "dia9_entry31"
-msgstr "Está bien, buenas noches. Descansa.
-"
+msgstr "Está bien, buenas noches. Descansa.\n"
 
 
 msgid "dia10_entry1"
