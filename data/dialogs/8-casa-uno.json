@@ -1,0 +1,27 @@
+{
+	"propset": "",
+	"dialog": [ 
+		{
+			"text": "dia8_entry1",
+			"name": "Madre",
+			"speaker": "",
+			"cond": [""],
+			"resp": []
+		},
+		{
+			"text": "dia8_entry2",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [""],
+			"resp": []
+		},
+		{
+			"text": "dia8_entry3",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [""],
+			"resp": []
+		}
+
+    ]
+}

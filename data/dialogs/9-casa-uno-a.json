@@ -1,0 +1,227 @@
+{
+	"propset": "",
+	"dialog": [ 
+		{
+			"text": "dia9_entry1",
+			"name": "Ali",
+			"speaker": "",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry2",
+			"name": "madre",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry3",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry4",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry5",
+			"name": "madre",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry6",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry7",
+			"name": "madre",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry8",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry9",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry10",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry11",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry12",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry13",
+			"name": "madre",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry14",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry15",
+			"name": "madre",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry16",
+			"name": "madre",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry17",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry18",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry19",
+			"name": "madre",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry20",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry21",
+			"name": "madre",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry22",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry23",
+			"name": "madre",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia9_entry24",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+
+
+
+        
+		{
+			"text": "dia9_entry25",
+			"name": "Ali",
+			"speaker": "",
+			"cond": ["mask_silencio"],
+			"resp": []
+		},
+        {
+			"text": "dia9_entry26",
+			"name": "madre",
+			"speaker": "madre",
+			"cond": ["mask_silencio"],
+			"resp": []
+		},
+        {
+			"text": "dia9_entry27",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_silencio"],
+			"resp": []
+		},
+        {
+			"text": "dia9_entry28",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_silencio"],
+			"resp": []
+		},
+        {
+			"text": "dia9_entry29",
+			"name": "madre",
+			"speaker": "madre",
+			"cond": ["mask_silencio"],
+			"resp": []
+		},
+        {
+			"text": "dia9_entry30",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": ["mask_silencio"],
+			"resp": []
+		},
+        {
+			"text": "dia9_entry31",
+			"name": "madre",
+			"speaker": "madre",
+			"cond": ["mask_silencio"],
+			"resp": []
+		}
+
+    ]
+}

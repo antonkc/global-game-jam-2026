@@ -1,0 +1,108 @@
+{
+	"propset": "",
+	"dialog": [ 
+		{
+			"text": "dia6_entry1",
+			"name": "poli",
+			"speaker": "poli",
+			"cond": [""],
+			"resp": []
+		},
+		{
+			"text": "dia6_entry2",
+			"name": "poli",
+			"speaker": "poli",
+			"cond": [""],
+			"resp": []
+		},
+        {
+			"text": "dia6_entry3",
+			"name": "poli",
+			"speaker": "poli",
+			"cond": [""],
+			"resp": []
+		},
+		{
+			"text": "dia6_entry4",
+			"name": "poli",
+			"speaker": "poli",
+			"cond": [""],
+			"resp": []
+		},
+		{
+			"text": "dia6_entry5",
+			"name": "Ali",
+			"speaker": "poli",
+			"cond": [""],
+			"resp": []
+		},
+
+        
+		{
+			"text": "dia6_entry6",
+			"name": "poli",
+			"speaker": "poli",
+			"cond": [""],
+			"resp": []
+		},
+
+
+		{
+			"text": "dia6_entry7",
+			"name": "Ali",
+			"speaker": "poli",
+			"cond": [""],
+			"resp": []
+		},
+		{
+			"text": "dia6_entry8",
+			"name": "poli",
+			"speaker": "poli",
+			"cond": [""],
+			"resp": []
+		},
+		{
+			"text": "dia6_entry9",
+			"name": "Ali",
+			"speaker": "poli",
+			"cond": [""],
+			"resp": []
+		},
+		{
+			"text": "dia6_entry10",
+			"name": "Ali",
+			"speaker": "poli",
+			"cond": [""],
+			"resp": []
+		},
+		{
+			"text": "dia6_entry11",
+			"name": "Ali",
+			"speaker": "poli",
+			"cond": [""],
+			"resp": []
+		},
+		{
+			"text": "dia6_entry12",
+			"name": "poli",
+			"speaker": "poli",
+			"cond": [""],
+			"resp": []
+		},
+		{
+			"text": "dia6_entry13",
+			"name": "Ali",
+			"speaker": "poli",
+			"cond": [""],
+			"resp": []
+		},
+		{
+			"text": "dia6_entry14",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [""],
+			"resp": []
+		}
+
+    ]
+}
