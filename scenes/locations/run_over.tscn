@@ -1,72 +1,67 @@
 [gd_scene format=3 uid="uid://kpn8wiefy2r2"]
 
 [ext_resource type="Script" uid="uid://c2nvn5lfwvy6x" path="res://scripts/locations/atropello.gd" id="1_r0kgp"]
-[ext_resource type="Texture2D" uid="uid://dgn0jyu03mral" path="res://assets/imgs/loading.png" id="2_4funs"]
+[ext_resource type="Texture2D" uid="uid://b7ebnaggv8h8v" path="res://assets/imgs/props/CocheChungo.png" id="2_ouvbd"]
 [ext_resource type="Script" uid="uid://cglusxm2trbue" path="res://scripts/locations/slide_in_scene.gd" id="3_ouvbd"]
+[ext_resource type="Texture2D" uid="uid://bvgpd6xrjrii8" path="res://assets/imgs/characters/AbuSana_800.png" id="4_ouvbd"]
 [ext_resource type="Script" uid="uid://tqbijymfy85r" path="res://scripts/locations/abuela_falling.gd" id="4_qxf7w"]
 [ext_resource type="Script" uid="uid://bjsqd0jfocukr" path="res://scripts/locations/abuela_crash.gd" id="5_e4kbq"]
+[ext_resource type="Texture2D" uid="uid://bprxq3mhlhghm" path="res://assets/imgs/characters/AbuMonyeca_800.png" id="5_ouvbd"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_0tnpc"]
-atlas = ExtResource("2_4funs")
-region = Rect2(0, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vtaks"]
-atlas = ExtResource("2_4funs")
-region = Rect2(100, 0, 100, 100)
+[sub_resource type="AtlasTexture" id="AtlasTexture_qxf7w"]
+atlas = ExtResource("2_ouvbd")
+region = Rect2(0, 200, 1300, 800)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_j5ifi"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_0tnpc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vtaks")
+"texture": SubResource("AtlasTexture_qxf7w")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_kvpfn"]
-atlas = ExtResource("2_4funs")
-region = Rect2(500, 0, 100, 100)
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4kbq"]
+atlas = ExtResource("4_ouvbd")
+region = Rect2(100, 0, 600, 800)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_snbx4"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_kvpfn")
+"texture": SubResource("AtlasTexture_e4kbq")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dinhu"]
-atlas = ExtResource("2_4funs")
-region = Rect2(600, 0, 100, 100)
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5ifi"]
+atlas = ExtResource("5_ouvbd")
+region = Rect2(100, 0, 600, 800)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2s3d8"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_dinhu")
+"texture": SubResource("AtlasTexture_j5ifi")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_trtic"]
-atlas = ExtResource("2_4funs")
-region = Rect2(700, 0, 100, 100)
+[sub_resource type="AtlasTexture" id="AtlasTexture_snbx4"]
+atlas = ExtResource("5_ouvbd")
+region = Rect2(100, 0, 600, 800)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w6e2n"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_trtic")
+"texture": SubResource("AtlasTexture_snbx4")
 }],
 "loop": true,
 "name": &"default",
@@ -87,11 +82,13 @@ sprite_frames = SubResource("SpriteFrames_snbx4")
 
 [node name="abuela_falling" type="AnimatedSprite2D" parent="atropello" unique_id=2099103210]
 visible = false
+rotation = 0.7853982
 sprite_frames = SubResource("SpriteFrames_2s3d8")
 script = ExtResource("4_qxf7w")
 
 [node name="abuela_crash" type="AnimatedSprite2D" parent="atropello" unique_id=1845700594]
 visible = false
+rotation = 1.3962634
 sprite_frames = SubResource("SpriteFrames_w6e2n")
 script = ExtResource("5_e4kbq")
 
