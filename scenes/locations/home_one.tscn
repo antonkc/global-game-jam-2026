@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://djkh8ou8mvvhe"]
+
+[node name="HomeOne" type="Node2D" unique_id=155181789]
+
+[node name="casa1" type="Node2D" parent="." unique_id=145377940]
+
+[node name="sofa" type="AnimatedSprite2D" parent="casa1" unique_id=2046918078]
+
+[node name="mesa" type="AnimatedSprite2D" parent="casa1" unique_id=1333852916]
+
+[node name="perchero" type="AnimatedSprite2D" parent="casa1" unique_id=1822130567]
+
+[node name="mask_vulnerabilidad" type="AnimatedSprite2D" parent="casa1" unique_id=707504113]
+
+[node name="mask_silencio" type="AnimatedSprite2D" parent="casa1" unique_id=282482142]
+
+[node name="madre" type="AnimatedSprite2D" parent="casa1" unique_id=1279341976]

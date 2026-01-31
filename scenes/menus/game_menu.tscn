@@ -2,62 +2,54 @@
 
 [node name="GameMenu" type="Node2D" unique_id=981705562]
 
-[node name="panel" type="Panel" parent="." unique_id=541765457]
-offset_left = 278.0
-offset_top = 175.0
-offset_right = 855.3457
-offset_bottom = 499.0
-
-[node name="play" type="Label" parent="panel" unique_id=2102666651]
-layout_mode = 1
+[node name="backdrop" type="Panel" parent="." unique_id=541765457]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -110.67285
-offset_top = -99.0
-offset_right = 98.32715
-offset_bottom = -31.0
+offset_right = 1198.0
+offset_bottom = 358.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="butt_continue" type="Panel" parent="backdrop" unique_id=1406872610]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 96.0
+offset_right = 873.0
+offset_bottom = 164.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="label" type="Label" parent="backdrop/butt_continue" unique_id=2054212863]
+layout_mode = 0
+offset_right = 577.0
+offset_bottom = 68.0
 text = "menu_play"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="settings" type="Label" parent="panel" unique_id=896662242]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -110.67285
-offset_top = -31.0
-offset_right = 98.32715
-offset_bottom = 37.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "menu_settings"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
+[node name="butt_quit" type="Panel" parent="backdrop" unique_id=1290240272]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 191.0
+offset_right = 873.0
+offset_bottom = 259.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
 
-[node name="quit" type="Label" parent="panel" unique_id=1211690656]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -110.67285
-offset_top = 37.0
-offset_right = 98.32715
-offset_bottom = 105.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="label" type="Label" parent="backdrop/butt_quit" unique_id=624966243]
+layout_mode = 0
+offset_right = 577.0
+offset_bottom = 68.0
 text = "menu_quit"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
+
+[connection signal="mouse_entered" from="backdrop/butt_quit" to="backdrop/butt_quit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="backdrop/butt_quit" to="backdrop/butt_quit" method="_on_mouse_exited"]

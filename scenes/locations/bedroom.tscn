@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://c6k2nxomoqep2"]
+
+[node name="Bedroom" type="Node2D" unique_id=1204956776]
+
+[node name="habitacion_Ali" type="Node2D" parent="." unique_id=371645000]

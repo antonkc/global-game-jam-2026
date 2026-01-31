@@ -2,33 +2,13 @@
 
 [ext_resource type="Script" uid="uid://g7r1f8hvtrnp" path="res://scripts/game.gd" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://dqef6kplukcj8" path="res://scenes/menus/main_menu.tscn" id="2_iywne"]
-[ext_resource type="PackedScene" uid="uid://cbuqg7q60xka2" path="res://scenes/menus/inventory.tscn" id="3_p57ef"]
-[ext_resource type="PackedScene" uid="uid://c656ccj3d44xu" path="res://scenes/dialog.tscn" id="4_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://jdng8gy7pbo5" path="res://scenes/location.tscn" id="5_gee14"]
-[ext_resource type="PackedScene" uid="uid://cj07nolh0qk1g" path="res://scenes/menus/game_menu.tscn" id="6_p57ef"]
 
 [node name="Game" type="Node2D" unique_id=742799620]
 script = ExtResource("1_uwrxv")
 
-[node name="MainMenu" parent="." unique_id=981705562 instance=ExtResource("2_iywne")]
+[node name="main_menu" parent="." unique_id=981705562 instance=ExtResource("2_iywne")]
 top_level = true
+position = Vector2(665, 340)
 
-[node name="GameMenu" parent="." unique_id=358669565 instance=ExtResource("6_p57ef")]
-visible = false
-
-[node name="Inventory" parent="." unique_id=1494187961 instance=ExtResource("3_p57ef")]
-visible = false
-
-[node name="Dialog" parent="." unique_id=611022932 instance=ExtResource("4_u5sy4")]
-visible = false
-
-[node name="Location" parent="." unique_id=1670313935 instance=ExtResource("5_gee14")]
-
-[node name="Menu" parent="." unique_id=254427492 instance=ExtResource("6_p57ef")]
-visible = false
-
-[node name="Location_Inicial" type="Node2D" parent="." unique_id=180476403]
-
-[node name="espectadores" type="Sprite2D" parent="Location_Inicial" unique_id=1700318219]
-
-[node name="stage" type="AnimatedSprite2D" parent="Location_Inicial" unique_id=1008023649]
+[node name="location" parent="." unique_id=1670313935 instance=ExtResource("5_gee14")]

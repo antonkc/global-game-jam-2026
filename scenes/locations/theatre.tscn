@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://hmjind8sutd6"]
+
+[node name="StartTheatre" type="Node2D" unique_id=244310463]
+
+[node name="Location_Inicial" type="Node2D" parent="." unique_id=479184083]
+
+[node name="espectadores" type="Sprite2D" parent="Location_Inicial" unique_id=1989354840]
+
+[node name="stage" type="AnimatedSprite2D" parent="Location_Inicial" unique_id=1629155550]

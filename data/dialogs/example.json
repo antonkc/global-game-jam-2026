@@ -1,0 +1,53 @@
+{
+	"propset": "street",
+	"dialog": [
+		{
+			"text": "dia1_entry1",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia1_entry2",
+			"name": "mom_name",
+			"speaker": "mom",
+			"cond": [],
+			"resp": [
+				{
+					"text": "dia1_entry2_resp1",
+					"eff": [
+						"stoneface"
+					]
+				},
+				{
+					"text": "dia1_entry2_resp2",
+					"eff": [
+						"blablaface"
+					]
+				}
+			]
+		},
+		{
+			"text": "dia1_entry3",
+			"name": "mom_name",
+			"speaker": "mom",
+			"cond": ["stoneface"],
+			"resp": []
+		},
+		{
+			"text": "dia1_entry4",
+			"name": "mom_name",
+			"speaker": "mom",
+			"cond": ["stoneface"],
+			"resp": []
+		},
+		{
+			"text": "dia1_entry5",
+			"name": "mom_name",
+			"speaker": "mom",
+			"cond": ["blablaface"],
+			"resp": []
+		}
+	]
+}
