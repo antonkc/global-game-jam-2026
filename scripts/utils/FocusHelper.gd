@@ -1,7 +1,7 @@
 extends Node
 class_name FocusHelper
 
-static func set_focused(node: Node2D, focused: bool, should_toggle_visibility: bool = true)->void:
+static func set_focused(node: CanvasItem, focused: bool, should_toggle_visibility: bool = true)->void:
 	if should_toggle_visibility:
 		if focused:
 			node.show()

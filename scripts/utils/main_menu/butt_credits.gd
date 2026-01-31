@@ -1,8 +1,8 @@
 extends Node
 
-@onready var main: Node2D = $"../../main"
-@onready var credits: Node2D = $"../../credits"
-@onready var settings: Node2D = $"../../settings"
+@onready var main: CanvasItem = $"../../main"
+@onready var credits: CanvasItem = $"../../credits"
+@onready var settings: CanvasItem = $"../../settings"
 
 @export var input_names: Array[String] = []
 @export var is_input_focused: bool = false

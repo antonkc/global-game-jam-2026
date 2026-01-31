@@ -1,11 +1,16 @@
 extends Panel
 
+@onready var main_menu: CanvasItem = $"../.."
 @export var input_names: Array[String] = []
 @export var is_input_focused: bool = false
 var mouse_on: bool = false
 
 func action()-> void:
-	get_tree().quit(0)
+	var parent: Game = main_menu.find_parent("Game")
+	if parent == null:
+		get_tree().quit(0)
+		return
+	parent.close_game()
 
 func _input(event: InputEvent) -> void:
 	if !is_input_focused:

@@ -69,6 +69,6 @@ animations = [{
 [node name="LoadingScreen" type="Node2D" unique_id=1593271240]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=218843546]
-position = Vector2(592, 286)
+position = Vector2(50, 50)
 sprite_frames = SubResource("SpriteFrames_gwdd4")
 frame_progress = 0.49381462

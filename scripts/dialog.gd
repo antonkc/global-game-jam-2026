@@ -6,4 +6,3 @@ extends Node2D
 
 func load_location(name: String)-> void:
 	pass
-	
