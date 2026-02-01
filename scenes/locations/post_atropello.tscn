@@ -1,3 +1,92 @@
 [gd_scene format=3 uid="uid://dl1uthjhpcggf"]
 
+[ext_resource type="Texture2D" uid="uid://cro50jpkl0btm" path="res://assets/imgs/characters/Poli_800.png" id="1_p8r6l"]
+[ext_resource type="Script" uid="uid://bxmuuaywh0d15" path="res://scenes/locations/policia_1.gd" id="2_pbcua"]
+[ext_resource type="Script" uid="uid://cpu7us3sj3b8n" path="res://scenes/locations/policia_2.gd" id="3_3h063"]
+[ext_resource type="Texture2D" uid="uid://bl8m5hxx3yjb5" path="res://assets/imgs/props/Ambulancia.png" id="4_y82t1"]
+[ext_resource type="Script" uid="uid://c66vohgj5i540" path="res://scenes/locations/ambulancia.gd" id="5_ex8hu"]
+[ext_resource type="Texture2D" uid="uid://bprxq3mhlhghm" path="res://assets/imgs/characters/AbuMonyeca_800.png" id="6_3h063"]
+[ext_resource type="Script" uid="uid://bjsqd0jfocukr" path="res://scripts/locations/abuela_crash.gd" id="7_y82t1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6e2n"]
+atlas = ExtResource("1_p8r6l")
+region = Rect2(0, 0, 800, 800)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kat3n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w6e2n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pg8bm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_p8r6l")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rrge2"]
+atlas = ExtResource("4_y82t1")
+region = Rect2(0, 0, 1173, 1173)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v3rmm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rrge2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_snbx4"]
+atlas = ExtResource("6_3h063")
+region = Rect2(100, 0, 600, 800)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ex8hu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_snbx4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="PostAtropello" type="Node2D" unique_id=1975680397]
+
+[node name="policia1" type="AnimatedSprite2D" parent="." unique_id=1961409561]
+scale = Vector2(0.25, 0.25)
+sprite_frames = SubResource("SpriteFrames_kat3n")
+script = ExtResource("2_pbcua")
+
+[node name="policia2" type="AnimatedSprite2D" parent="." unique_id=319207352]
+scale = Vector2(0.45, 0.45)
+sprite_frames = SubResource("SpriteFrames_pg8bm")
+script = ExtResource("3_3h063")
+
+[node name="ambulancia" type="AnimatedSprite2D" parent="." unique_id=1669743931]
+visible = false
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_v3rmm")
+script = ExtResource("5_ex8hu")
+
+[node name="coche_poli" type="AnimatedSprite2D" parent="." unique_id=1645487546]
+
+[node name="abuela_crash" type="AnimatedSprite2D" parent="." unique_id=124178118]
+visible = false
+rotation = 1.3962634
+scale = Vector2(0.25, 0.25)
+sprite_frames = SubResource("SpriteFrames_ex8hu")
+script = ExtResource("7_y82t1")

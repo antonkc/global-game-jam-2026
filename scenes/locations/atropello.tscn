@@ -8,12 +8,11 @@
 [ext_resource type="Script" uid="uid://bjsqd0jfocukr" path="res://scripts/locations/abuela_crash.gd" id="5_e4kbq"]
 [ext_resource type="Texture2D" uid="uid://bprxq3mhlhghm" path="res://assets/imgs/characters/AbuMonyeca_800.png" id="5_ouvbd"]
 [ext_resource type="Texture2D" uid="uid://budmijf5rrb6y" path="res://assets/imgs/backgrounds/Fondo1.png" id="8_qxf7w"]
-[ext_resource type="Texture2D" uid="uid://cro50jpkl0btm" path="res://assets/imgs/characters/Poli_800.png" id="8_snbx4"]
-[ext_resource type="Script" uid="uid://bxmuuaywh0d15" path="res://scenes/locations/policia_1.gd" id="9_2s3d8"]
 [ext_resource type="Script" uid="uid://ck3uuhsp5qgwi" path="res://scripts/locations/fondo.gd" id="9_e4kbq"]
-[ext_resource type="Script" uid="uid://cpu7us3sj3b8n" path="res://scenes/locations/policia_2.gd" id="10_j3ia6"]
-[ext_resource type="Texture2D" uid="uid://bl8m5hxx3yjb5" path="res://assets/imgs/props/Ambulancia.png" id="10_w6e2n"]
-[ext_resource type="Script" uid="uid://c66vohgj5i540" path="res://scenes/locations/ambulancia.gd" id="11_j3ia6"]
+[ext_resource type="Texture2D" uid="uid://cky5hle3x5u8s" path="res://assets/imgs/props/CasaAli.png" id="10_ncou2"]
+[ext_resource type="Script" uid="uid://txmc2qi4gsfc" path="res://scenes/locations/edificio.gd" id="11_wwh2q"]
+[ext_resource type="Texture2D" uid="uid://dsnw8y7ke8qb" path="res://assets/imgs/props/Discos.png" id="12_d572r"]
+[ext_resource type="Script" uid="uid://bilm3ffi0267s" path="res://scenes/locations/tienda.gd" id="13_sj36q"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qxf7w"]
 atlas = ExtResource("2_ouvbd")
@@ -75,47 +74,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_w6e2n"]
-atlas = ExtResource("8_snbx4")
-region = Rect2(0, 0, 800, 800)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_mkidj"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_w6e2n")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_dxs1b"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("8_snbx4")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rrge2"]
-atlas = ExtResource("10_w6e2n")
-region = Rect2(0, 0, 1173, 1173)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_anrhi"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rrge2")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_2s3d8"]
 atlas = ExtResource("8_qxf7w")
 region = Rect2(0, 0, 2920, 1643)
@@ -125,6 +83,36 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2s3d8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bvyj0"]
+atlas = ExtResource("10_ncou2")
+region = Rect2(0, 0, 1050, 1050)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mkidj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bvyj0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gi3qg"]
+atlas = ExtResource("12_d572r")
+region = Rect2(0, 0, 1265, 1265)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dxs1b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gi3qg")
 }],
 "loop": true,
 "name": &"default",
@@ -159,32 +147,20 @@ scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_g6gyl")
 script = ExtResource("5_e4kbq")
 
-[node name="policia1" type="AnimatedSprite2D" parent="atropello" unique_id=2106479376]
-scale = Vector2(0.25, 0.25)
-sprite_frames = SubResource("SpriteFrames_mkidj")
-script = ExtResource("9_2s3d8")
-
-[node name="policia2" type="AnimatedSprite2D" parent="atropello" unique_id=954064298]
-scale = Vector2(0.45, 0.45)
-sprite_frames = SubResource("SpriteFrames_dxs1b")
-script = ExtResource("10_j3ia6")
-
-[node name="ambulancia" type="AnimatedSprite2D" parent="atropello" unique_id=1059260268]
-visible = false
-scale = Vector2(0.5, 0.5)
-sprite_frames = SubResource("SpriteFrames_anrhi")
-script = ExtResource("11_j3ia6")
-
-[node name="coche_poli" type="AnimatedSprite2D" parent="atropello" unique_id=1518918100]
-
 [node name="fondo" type="AnimatedSprite2D" parent="atropello" unique_id=565014180]
 z_index = -2
 scale = Vector2(0.66, 0.66)
 sprite_frames = SubResource("SpriteFrames_jl3jt")
 script = ExtResource("9_e4kbq")
 
-[node name="tienda" type="AnimatedSprite2D" parent="atropello" unique_id=1279215725]
-
-[node name="edificio" type="AnimatedSprite2D" parent="atropello" unique_id=907128487]
-
 [node name="gente" type="AnimatedSprite2D" parent="atropello" unique_id=614217156]
+
+[node name="Edificio" type="AnimatedSprite2D" parent="." unique_id=404568327]
+scale = Vector2(0.65, 0.65)
+sprite_frames = SubResource("SpriteFrames_mkidj")
+script = ExtResource("11_wwh2q")
+
+[node name="Tienda" type="AnimatedSprite2D" parent="." unique_id=1654501424]
+scale = Vector2(0.65, 0.65)
+sprite_frames = SubResource("SpriteFrames_dxs1b")
+script = ExtResource("13_sj36q")
