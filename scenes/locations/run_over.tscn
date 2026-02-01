@@ -7,6 +7,8 @@
 [ext_resource type="Script" uid="uid://tqbijymfy85r" path="res://scripts/locations/abuela_falling.gd" id="4_qxf7w"]
 [ext_resource type="Script" uid="uid://bjsqd0jfocukr" path="res://scripts/locations/abuela_crash.gd" id="5_e4kbq"]
 [ext_resource type="Texture2D" uid="uid://bprxq3mhlhghm" path="res://assets/imgs/characters/AbuMonyeca_800.png" id="5_ouvbd"]
+[ext_resource type="Texture2D" uid="uid://budmijf5rrb6y" path="res://assets/imgs/backgrounds/Fondo1.png" id="8_qxf7w"]
+[ext_resource type="Script" uid="uid://ck3uuhsp5qgwi" path="res://scripts/locations/fondo.gd" id="9_e4kbq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qxf7w"]
 atlas = ExtResource("2_ouvbd")
@@ -68,6 +70,21 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_2s3d8"]
+atlas = ExtResource("8_qxf7w")
+region = Rect2(0, 0, 2920, 1643)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j3ia6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2s3d8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="RunOver" type="Node2D" unique_id=1608329221]
 
 [node name="atropello" type="Node2D" parent="." unique_id=1712852745]
@@ -104,8 +121,14 @@ script = ExtResource("5_e4kbq")
 
 [node name="coche_poli" type="AnimatedSprite2D" parent="atropello" unique_id=319299593]
 
-[node name="gente" type="AnimatedSprite2D" parent="atropello" unique_id=764003506]
+[node name="fondo" type="AnimatedSprite2D" parent="atropello" unique_id=764003506]
+z_index = -2
+scale = Vector2(0.66, 0.66)
+sprite_frames = SubResource("SpriteFrames_j3ia6")
+script = ExtResource("9_e4kbq")
 
 [node name="tienda" type="AnimatedSprite2D" parent="atropello" unique_id=1026967768]
 
 [node name="edificio" type="AnimatedSprite2D" parent="atropello" unique_id=1741768567]
+
+[node name="gente" type="AnimatedSprite2D" parent="atropello" unique_id=773641417]
