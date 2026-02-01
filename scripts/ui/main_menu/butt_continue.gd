@@ -13,7 +13,7 @@ func action()-> void:
 	if parent == null:
 		printerr("tried to create game without Game root node")
 		return
-	parent.load_new_game()
+	parent.load_running_game()
 
 func _input(event: InputEvent) -> void:
 	if !is_input_focused:

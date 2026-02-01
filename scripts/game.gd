@@ -5,14 +5,16 @@ class_name Game
 @onready var main_menu: Node2D = $Panel/main_menu
 @onready var location: Location = $Panel/location
 
-@export var running_game: GameState
+var running_game: GameState = null
 
 func _ready() -> void:
 	_fit_window()
 	# TODO: load saved data from file
 
 func load_new_game()->void:
-	running_game.reset()
+	if running_game != null:
+		running_game.free()
+	running_game = GameState.new()
 	_load_game()
 
 func load_running_game()->void:

@@ -25,6 +25,9 @@ const locations: Dictionary[String, PackedScene] = {
 var game_state: GameState = null
 
 func load(in_game_state: GameState)-> void:
+	if in_game_state == null:
+		printerr("tried to load null game_state")
+		return
 	game_state = in_game_state
 	_load_location(game_state.location)
 
@@ -63,14 +66,17 @@ func choose_background(bg_name: String)->void:
 		"zoomed_out":
 			background.animation = bg_name
 		_:
-			printerr("tried to open background with invalid name %v".format([bg_name]))
+			printerr("tried to open background with invalid name %s" % bg_name)
 
 func end_dialog()->void:
+	dialog.hide()
+	target.show()
 	for n in target.get_children(): n.show()
 
 func _load_location(loc_name: String):
+	print_debug("starting load for location \"%s\"" % loc_name)
 	if !_is_valid_location(game_state.location):
-		printerr("tried to load invalid location \"{name}\"".format({"name": loc_name}))
+		printerr("tried to load invalid location \"%s\"" % loc_name)
 		return
 
 	game_state.location = loc_name

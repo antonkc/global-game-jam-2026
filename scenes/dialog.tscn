@@ -20,25 +20,55 @@ metadata/_edit_use_anchors_ = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="dialogo" unique_id=376941216]
 layout_mode = 0
-offset_top = 71.0
 offset_right = 1419.0
 offset_bottom = 378.0
+focus_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
 scroll_active = false
-
-[node name="Label" type="Label" parent="dialogo" unique_id=786225876]
-layout_mode = 0
-offset_right = 1419.0
-offset_bottom = 68.0
+tab_size = 2
+selection_enabled = true
 
 [node name="screen" type="Panel" parent="." unique_id=1941624826]
+self_modulate = Color(1, 1, 1, 0)
 clip_contents = true
 offset_right = 1920.0
 offset_bottom = 700.0
 
 [node name="facecam" type="Panel" parent="." unique_id=1297005100]
+self_modulate = Color(1, 1, 1, 0)
 clip_contents = true
 offset_left = 1420.0
 offset_top = 701.0
 offset_right = 1920.0
 offset_bottom = 1080.0
+
+[node name="speech_bubble_a" type="Panel" parent="." unique_id=1311978795]
+visible = false
+self_modulate = Color(1, 1, 1, 0.6666667)
+offset_left = 18.0
+offset_top = 23.0
+offset_right = 748.0
+offset_bottom = 294.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="speech_bubble_a" unique_id=60172381]
+layout_mode = 0
+offset_right = 730.0
+offset_bottom = 270.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+scroll_active = false
+
+[node name="speech_bubble_b" type="Panel" parent="." unique_id=1358795089]
+visible = false
+self_modulate = Color(1, 1, 1, 0.6666667)
+offset_left = 1167.0
+offset_top = 23.0
+offset_right = 1897.0
+offset_bottom = 294.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="speech_bubble_b" unique_id=1960714866]
+layout_mode = 0
+offset_right = 730.0
+offset_bottom = 270.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+scroll_active = false

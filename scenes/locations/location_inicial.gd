@@ -1,7 +1,7 @@
 extends Node2D
 @onready var start_theatre: Node2D = $".."
 
-#var parent : Location = start_theatre.find_parent("Location")
+@onready var parent: Location = start_theatre.find_parent("Location")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,8 +12,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 	
-"""func _on_continue() -> void:
+func _on_continue() -> void:
 	parent.load_location("atropello")
 
 func on_continue() -> void:
-	_on_continue()	"""
+	_on_continue()

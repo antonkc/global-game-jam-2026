@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://dqef6kplukcj8" path="res://scenes/menus/main_menu.tscn" id="2_iywne"]
 [ext_resource type="Texture2D" uid="uid://budmijf5rrb6y" path="res://assets/imgs/backgrounds/Fondo1.png" id="2_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://jdng8gy7pbo5" path="res://scenes/location.tscn" id="5_gee14"]
-[ext_resource type="PackedScene" uid="uid://ckyccupe8j6tp" path="res://scenes/game_state.tscn" id="5_iywne"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iywne"]
 animations = [{
@@ -17,9 +16,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Game" type="Node2D" unique_id=742799620 node_paths=PackedStringArray("running_game")]
+[node name="Game" type="Node2D" unique_id=742799620]
 script = ExtResource("1_uwrxv")
-running_game = NodePath("Panel/GameState")
 
 [node name="Panel" type="Panel" parent="." unique_id=1739081920]
 anchors_preset = 8
@@ -47,5 +45,3 @@ position = Vector2(0, 8)
 
 [node name="location" parent="Panel" unique_id=1670313935 instance=ExtResource("5_gee14")]
 visible = false
-
-[node name="GameState" parent="Panel" unique_id=197677217 instance=ExtResource("5_iywne")]
