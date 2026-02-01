@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c8cfudtqna3ls" path="res://scripts/location.gd" id="1_gjgjs"]
 [ext_resource type="Texture2D" uid="uid://budmijf5rrb6y" path="res://assets/imgs/backgrounds/Fondo1.png" id="2_j6npq"]
+[ext_resource type="PackedScene" uid="uid://c656ccj3d44xu" path="res://scenes/dialog.tscn" id="3_nnb31"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nnb31"]
 atlas = ExtResource("2_j6npq")
@@ -25,4 +26,12 @@ script = ExtResource("1_gjgjs")
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_v7tse")
 
-[node name="target" type="Node" parent="." unique_id=337952394]
+[node name="target" type="Control" parent="." unique_id=1494887586]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Dialog" parent="." unique_id=611022932 instance=ExtResource("3_nnb31")]
+visible = false
+position = Vector2(1519.4365, 802.3824)

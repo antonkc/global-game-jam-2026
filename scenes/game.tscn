@@ -36,6 +36,7 @@ size_flags_vertical = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel" unique_id=1625800676]
+self_modulate = Color(0.5370987, 0.5370987, 0.5370987, 1)
 position = Vector2(959.99994, 540.25)
 scale = Vector2(0.65753424, 0.65702975)
 sprite_frames = SubResource("SpriteFrames_iywne")
@@ -45,5 +46,6 @@ top_level = true
 position = Vector2(0, 8)
 
 [node name="location" parent="Panel" unique_id=1670313935 instance=ExtResource("5_gee14")]
+visible = false
 
 [node name="GameState" parent="Panel" unique_id=197677217 instance=ExtResource("5_iywne")]

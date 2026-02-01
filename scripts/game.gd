@@ -8,16 +8,7 @@ class_name Game
 @export var running_game: GameState
 
 func _ready() -> void:
-	var screen_size: Vector2i = DisplayServer.screen_get_size()
-	var game_size: Vector2i = DisplayServer.window_get_size()
-
-	if screen_size[0] < game_size[0]:
-		game_size[0] = screen_size[0]
-	if screen_size[1] < game_size[1]:
-		game_size[1] = screen_size[1]
-
-	DisplayServer.window_set_size(game_size)
-
+	_fit_window()
 	# TODO: load saved data from file
 
 func load_new_game()->void:
@@ -32,5 +23,20 @@ func close_game()->void:
 	get_tree().quit(0)
 
 func _load_game()->void:
+	animated_sprite_2d.visible = false
+	animated_sprite_2d.stop()
 	animated_sprite_2d.hide()
+	main_menu.hide()
 	location.load(running_game)
+	location.show()
+
+func _fit_window():
+	var screen_size: Vector2i = DisplayServer.screen_get_size()
+	var game_size: Vector2i = DisplayServer.window_get_size()
+
+	if screen_size[0] < game_size[0]:
+		game_size[0] = screen_size[0]
+	if screen_size[1] < game_size[1]:
+		game_size[1] = screen_size[1]
+
+	DisplayServer.window_set_size(game_size)
