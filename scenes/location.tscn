@@ -1,10 +1,28 @@
 [gd_scene format=3 uid="uid://jdng8gy7pbo5"]
 
 [ext_resource type="Script" uid="uid://c8cfudtqna3ls" path="res://scripts/location.gd" id="1_gjgjs"]
+[ext_resource type="Texture2D" uid="uid://budmijf5rrb6y" path="res://assets/imgs/backgrounds/Fondo1.png" id="2_j6npq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nnb31"]
+atlas = ExtResource("2_j6npq")
+region = Rect2(515, 150, 1920, 1080)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v7tse"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nnb31")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Location" type="Node2D" unique_id=1670313935]
 script = ExtResource("1_gjgjs")
 
-[node name="stage_background" type="Sprite2D" parent="." unique_id=1635739093]
+[node name="stage_background" type="AnimatedSprite2D" parent="." unique_id=163489377]
+position = Vector2(960, 540)
+sprite_frames = SubResource("SpriteFrames_v7tse")
 
 [node name="target" type="Node" parent="." unique_id=337952394]

@@ -17,10 +17,10 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	# Mueve el sprite en el eje x
 	coche_crash.position.x += coche_crash.speed		# avanzar en el eje x
-	coche_crash.position.y = 150		# posición en el eje y
-	abuela.position.x = 840
-	abuela.position.y = 150
-	if coche_crash.position.x == 760:
+	coche_crash.position.y = 750		# posición en el eje y
+	abuela.position.x = 890
+	abuela.position.y = 780
+	if coche_crash.position.x == 560:
 		coche_crash.speed = 0.0
 		timer += delta
 		if timer >= 0.3:
@@ -31,5 +31,5 @@ func _process(delta: float) -> void:
 			abuela_falling.visible = false
 			abuela_crash.visible = true
 		if timer >= 2.0:
-			coche_crash.speed = 10.0
+			coche_crash.speed = 15.0
 	

@@ -1,7 +1,7 @@
 extends AnimatedSprite2D
 
 # Expone la variable en el Inspector del editor
-var speed := 5.0 	# Velocidad de movimiento por pantalla
+var speed := 8.0 	# Velocidad de movimiento por pantalla
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

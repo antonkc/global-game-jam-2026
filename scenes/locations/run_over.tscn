@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://kpn8wiefy2r2"]
+[gd_scene format=3 uid="uid://djfs643lyo2av"]
 
 [ext_resource type="Script" uid="uid://c2nvn5lfwvy6x" path="res://scripts/locations/atropello.gd" id="1_r0kgp"]
 [ext_resource type="Texture2D" uid="uid://b7ebnaggv8h8v" path="res://assets/imgs/props/CocheChungo.png" id="2_ouvbd"]
@@ -74,21 +74,25 @@ animations = [{
 script = ExtResource("1_r0kgp")
 
 [node name="coche_crash" type="AnimatedSprite2D" parent="atropello" unique_id=23929814]
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_j5ifi")
 script = ExtResource("3_ouvbd")
 
 [node name="abuela" type="AnimatedSprite2D" parent="atropello" unique_id=2044775275]
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_snbx4")
 
 [node name="abuela_falling" type="AnimatedSprite2D" parent="atropello" unique_id=2099103210]
 visible = false
 rotation = 0.7853982
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_2s3d8")
 script = ExtResource("4_qxf7w")
 
 [node name="abuela_crash" type="AnimatedSprite2D" parent="atropello" unique_id=1845700594]
 visible = false
 rotation = 1.3962634
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_w6e2n")
 script = ExtResource("5_e4kbq")
 
