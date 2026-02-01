@@ -11,8 +11,8 @@ func reset()->void:
 	location = "tutorial"
 	effects = []
 
-func has_effect(name: String)->bool:
+func has_effect(eff_name: String)->bool:
 	for eff in effects:
-		if name == eff:
+		if eff_name == eff:
 			return true
 	return false

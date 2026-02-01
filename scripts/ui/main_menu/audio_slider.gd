@@ -7,7 +7,7 @@ extends Node
 func _ready() -> void:
 	var idx: int = AudioServer.get_bus_index(bus_name)
 	if idx == -1:
-		printerr("tried to get bus with name \"${bus_name}\"")
+		printerr("tried to get bus with name \"${bus_name}\"".format({"bus_name": bus_name}))
 		return
 
 	var vol: float = AudioServer.get_bus_volume_linear(idx) * 100
@@ -16,7 +16,7 @@ func _ready() -> void:
 func _on_h_slider_value_changed(value: float) -> void:
 	var idx: int = AudioServer.get_bus_index(bus_name)
 	if idx == -1:
-		printerr("tried to get bus with name \"${bus_name}\"")
+		printerr("tried to get bus with name \"${bus_name}\"".format({"bus_name": bus_name}))
 		return
 
 	AudioServer.set_bus_volume_linear(idx, value / 100)

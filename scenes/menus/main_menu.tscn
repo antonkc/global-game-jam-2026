@@ -1,12 +1,17 @@
 [gd_scene format=3 uid="uid://dqef6kplukcj8"]
 
 [ext_resource type="Script" uid="uid://dskc2g8uponn5" path="res://scripts/ui/main_menu.gd" id="1_ovrgc"]
-[ext_resource type="Script" uid="uid://c6ptd84s485iw" path="res://scripts/utils/main_menu/butt_quit.gd" id="1_xqga4"]
-[ext_resource type="Script" uid="uid://bf8bnspe240bp" path="res://scripts/utils/main_menu/butt_credits.gd" id="2_2o76q"]
-[ext_resource type="Script" uid="uid://be3c7sg7eyi4u" path="res://scripts/utils/main_menu/butt_settings.gd" id="2_imvie"]
-[ext_resource type="Script" uid="uid://cuupeug1ef1lt" path="res://scripts/utils/main_menu/butt_back.gd" id="4_6bivr"]
-[ext_resource type="Script" uid="uid://nt1u4kjf47au" path="res://scripts/utils/main_menu/lang_selector.gd" id="6_8r73w"]
-[ext_resource type="Script" uid="uid://c6323l4m3n44e" path="res://scripts/utils/main_menu/audio_slider.gd" id="6_ng0o5"]
+[ext_resource type="Script" uid="uid://c6ptd84s485iw" path="res://scripts/ui/main_menu/butt_quit.gd" id="1_xqga4"]
+[ext_resource type="Script" uid="uid://cphp08snxx3k1" path="res://scripts/ui/main_menu/butt_create.gd" id="2_1hnlc"]
+[ext_resource type="Script" uid="uid://bf8bnspe240bp" path="res://scripts/ui/main_menu/butt_credits.gd" id="2_2o76q"]
+[ext_resource type="Script" uid="uid://w16dl313js6o" path="res://scripts/ui/main_menu/butt_continue.gd" id="2_50h1w"]
+[ext_resource type="Script" uid="uid://be3c7sg7eyi4u" path="res://scripts/ui/main_menu/butt_settings.gd" id="2_imvie"]
+[ext_resource type="Script" uid="uid://cuupeug1ef1lt" path="res://scripts/ui/main_menu/butt_back.gd" id="4_6bivr"]
+[ext_resource type="Script" uid="uid://nt1u4kjf47au" path="res://scripts/ui/main_menu/lang_selector.gd" id="6_8r73w"]
+[ext_resource type="Script" uid="uid://c6323l4m3n44e" path="res://scripts/ui/main_menu/audio_slider.gd" id="6_ng0o5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_50h1w"]
+bg_color = Color(0.5065489, 0.5065489, 0.5065489, 1)
 
 [node name="MainMenu" type="Node2D" unique_id=981705562]
 script = ExtResource("1_ovrgc")
@@ -26,6 +31,9 @@ offset_right = 577.0
 offset_bottom = 68.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_50h1w")
+script = ExtResource("2_50h1w")
+is_input_focused = true
 
 [node name="label" type="Label" parent="main/butt_continue" unique_id=1831189119]
 layout_mode = 0
@@ -43,6 +51,8 @@ offset_right = 577.0
 offset_bottom = 136.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
+script = ExtResource("2_1hnlc")
+is_input_focused = true
 
 [node name="label" type="Label" parent="main/butt_create" unique_id=1714238478]
 layout_mode = 0
@@ -343,6 +353,10 @@ autowrap_mode = 3
 
 [connection signal="draw" from="." to="." method="_on_draw"]
 [connection signal="hidden" from="." to="." method="_on_hidden"]
+[connection signal="mouse_entered" from="main/butt_continue" to="main/butt_continue" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="main/butt_continue" to="main/butt_continue" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="main/butt_create" to="main/butt_create" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="main/butt_create" to="main/butt_create" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="main/butt_settings" to="main/butt_settings" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="main/butt_settings" to="main/butt_settings" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="main/butt_credits" to="main/butt_credits" method="_on_mouse_entered"]
