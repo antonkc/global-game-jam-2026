@@ -1,9 +1,97 @@
 [gd_scene format=3 uid="uid://hmjind8sutd6"]
 
+[ext_resource type="Script" uid="uid://ciivgj86q5yga" path="res://scenes/locations/location_inicial.gd" id="1_soeew"]
+[ext_resource type="Texture2D" uid="uid://budmijf5rrb6y" path="res://assets/imgs/backgrounds/Fondo1.png" id="2_qcbsn"]
+[ext_resource type="Texture2D" uid="uid://dsnw8y7ke8qb" path="res://assets/imgs/props/Discos.png" id="3_0nl6h"]
+[ext_resource type="Texture2D" uid="uid://cky5hle3x5u8s" path="res://assets/imgs/props/CasaAli.png" id="3_qcbsn"]
+[ext_resource type="Script" uid="uid://txmc2qi4gsfc" path="res://scenes/locations/edificio.gd" id="4_0nl6h"]
+[ext_resource type="Script" uid="uid://bilm3ffi0267s" path="res://scenes/locations/tienda.gd" id="6_tp51f"]
+[ext_resource type="Script" uid="uid://ls807yhrk4tk" path="res://scenes/locations/abu.gd" id="7_gi3qg"]
+[ext_resource type="Texture2D" uid="uid://bvgpd6xrjrii8" path="res://assets/imgs/characters/AbuSana_800.png" id="7_ylalj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nl6h"]
+atlas = ExtResource("2_qcbsn")
+region = Rect2(0, 0, 2920, 1643)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bvyj0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nl6h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bvyj0"]
+atlas = ExtResource("3_qcbsn")
+region = Rect2(0, 0, 1050, 1050)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tp51f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bvyj0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gi3qg"]
+atlas = ExtResource("3_0nl6h")
+region = Rect2(0, 0, 1265, 1265)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ylalj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gi3qg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_11sf4"]
+atlas = ExtResource("7_ylalj")
+region = Rect2(0, 0, 800, 800)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_30r6o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_11sf4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="StartTheatre" type="Node2D" unique_id=244310463]
 
 [node name="Location_Inicial" type="Node2D" parent="." unique_id=479184083]
+script = ExtResource("1_soeew")
 
 [node name="espectadores" type="Sprite2D" parent="Location_Inicial" unique_id=1989354840]
 
 [node name="stage" type="AnimatedSprite2D" parent="Location_Inicial" unique_id=1629155550]
+position = Vector2(957.00006, 541)
+scale = Vector2(0.66, 0.66)
+sprite_frames = SubResource("SpriteFrames_bvyj0")
+
+[node name="Edificio" type="AnimatedSprite2D" parent="Location_Inicial" unique_id=681004207]
+scale = Vector2(0.65, 0.65)
+sprite_frames = SubResource("SpriteFrames_tp51f")
+script = ExtResource("4_0nl6h")
+
+[node name="Tienda" type="AnimatedSprite2D" parent="Location_Inicial" unique_id=1795757560]
+scale = Vector2(0.65, 0.65)
+sprite_frames = SubResource("SpriteFrames_ylalj")
+script = ExtResource("6_tp51f")
+
+[node name="Abu" type="AnimatedSprite2D" parent="Location_Inicial" unique_id=363627162]
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_30r6o")
+script = ExtResource("7_gi3qg")
