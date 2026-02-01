@@ -155,12 +155,14 @@ script = ExtResource("9_e4kbq")
 
 [node name="gente" type="AnimatedSprite2D" parent="atropello" unique_id=614217156]
 
-[node name="Edificio" type="AnimatedSprite2D" parent="." unique_id=404568327]
+[node name="Edificio" type="AnimatedSprite2D" parent="atropello" unique_id=369172760]
+z_index = -1
 scale = Vector2(0.65, 0.65)
 sprite_frames = SubResource("SpriteFrames_mkidj")
 script = ExtResource("11_wwh2q")
 
-[node name="Tienda" type="AnimatedSprite2D" parent="." unique_id=1654501424]
+[node name="Tienda" type="AnimatedSprite2D" parent="atropello" unique_id=1323761565]
+z_index = -1
 scale = Vector2(0.65, 0.65)
 sprite_frames = SubResource("SpriteFrames_dxs1b")
 script = ExtResource("13_sj36q")
