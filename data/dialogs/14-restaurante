@@ -1,0 +1,401 @@
+{
+	"propset": "",
+	"dialog": [ 
+		{
+			"text": "dia14_entry1",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry2",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry3",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry4",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry5",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry6",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry7",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry8",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry9",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry10",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry11",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry12",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry13",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry14",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry15",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry16",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry17",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry18",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry19",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry20",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry21",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry22",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry23",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry24",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+
+
+
+		{
+			"text": "dia14_entry25",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry26",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry27",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry28",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry29",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry30",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry31",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry32",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry33",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry34",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry35",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry36",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry37",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry38",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry39",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry40",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+
+
+
+
+		{
+			"text": "dia14_entry41",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad and 1a"], 
+			"resp": []
+		},
+		{
+			"text": "dia14_entry42",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad and cond1_or_cond2"],
+			"resp": []
+		},
+
+		{
+			"text": "dia14_entry43",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry44",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry45",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry46",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry47",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_vulnerabilidad"],
+			"resp": []
+		},
+
+
+		{
+			"text": "dia14_entry48",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_silencio"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry49",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_silencio"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry50",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_silencio"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry51",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_silencio"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry52",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_silencio"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry53",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["mask_silencio"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry54",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_silencio"],
+			"resp": []
+		},
+		{
+			"text": "dia14_entry55",
+			"name": "Ali",
+			"speaker": "noa",
+			"cond": ["mask_silencio"],
+			"resp": []
+		}
+
+    ]
+}

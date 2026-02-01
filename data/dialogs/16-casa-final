@@ -1,0 +1,132 @@
+{
+	"propset": "",
+	"dialog": [ 
+		{
+			"text": "dia16_entry1",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry2",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry3",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry4",
+			"name": "Madre",
+			"speaker": "madre",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry5",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry6",
+			"name": "Madre",
+			"speaker": "madre",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry7",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry8",
+			"name": "Madre",
+			"speaker": "madre",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry9",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry10",
+			"name": "Madre",
+			"speaker": "madre",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry11",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry12",
+			"name": "Madre",
+			"speaker": "madre",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry13",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry14",
+			"name": "Madre",
+			"speaker": "madre",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry15",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry16",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry17",
+			"name": "Ali",
+			"speaker": "madre",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia16_entry18",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [],
+			"resp": []
+		}
+
+    ]
+}

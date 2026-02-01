@@ -5,14 +5,14 @@
 			"text": "dia12_entry1",
 			"name": "Señora Pili",
 			"speaker": "pili",
-			"cond": [""],
+			"cond": [],
 			"resp": []
 		},
 		{
 			"text": "dia12_entry2",
 			"name": "Ali",
 			"speaker": "pili",
-			"cond": [""],
+			"cond": [],
 			"resp": []
 		},
 
@@ -107,21 +107,21 @@
 			"text": "dia12_entry15",
 			"name": "Ali",
 			"speaker": "pili",
-			"cond": ["mask_hablar "],
+			"cond": ["mask_hablar"],
 			"resp": []
 		},
 		{
 			"text": "dia12_entry16",
 			"name": "Ali",
 			"speaker": "pili",
-			"cond": ["mask_hablar "],
+			"cond": ["mask_hablar"],
 			"resp": []
 		},
 		{
 			"text": "dia12_entry17",
 			"name": "Ali",
 			"speaker": "pili",
-			"cond": ["mask_hablar "],
+			"cond": ["mask_hablar"],
 			"resp": []
 		}
 	

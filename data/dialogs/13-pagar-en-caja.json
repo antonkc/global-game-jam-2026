@@ -1,0 +1,213 @@
+{
+	"propset": "",
+	"dialog": [ 
+		{
+			"text": "dia13_entry1",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry2",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry3",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry4",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry5",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry6",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry7",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry8",
+			"name": "Cajero",
+			"speaker": "cajero",
+			"cond": [],
+			"resp": []
+		},
+
+
+		{
+			"text": "dia13_entry9",
+			"name": "Ali",
+			"speaker": "cajero",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry10",
+			"name": "Ali",
+			"speaker": "cajero",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry11",
+			"name": "C",
+			"speaker": "cajero",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry12",
+			"name": "Ali",
+			"speaker": "cajero",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry13",
+			"name": "Ali",
+			"speaker": "cajero",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry14",
+			"name": "Ali",
+			"speaker": "cajero",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry15",
+			"name": "Ali",
+			"speaker": "cajero",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry16",
+			"name": "Cajero",
+			"speaker": "cajero",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry17",
+			"name": "Ali",
+			"speaker": "cajero",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry18",
+			"name": "Ali",
+			"speaker": "cajero",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry19",
+			"name": "Ali",
+			"speaker": "cajero",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry20",
+			"name": "Cajero",
+			"speaker": "cajero",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry21",
+			"name": "Cajero",
+			"speaker": "cajero",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry22",
+			"name": "Ali",
+			"speaker": "cajero",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+
+
+		{
+			"text": "dia13_entry23",
+			"name": "Ali",
+			"speaker": "cajero",
+			"cond": ["mask_hablar"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry24",
+			"name": "Ali",
+			"speaker": "cajero",
+			"cond": ["mask_hablar"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry25",
+			"name": "Cajero",
+			"speaker": "cajero",
+			"cond": ["mask_hablar"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry26",
+			"name": "Ali",
+			"speaker": "cajero",
+			"cond": ["mask_hablar"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry27",
+			"name": "Ali",
+			"speaker": "cajero",
+			"cond": ["mask_hablar"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry28",
+			"name": "Cajero",
+			"speaker": "cajero",
+			"cond": ["mask_hablar"],
+			"resp": []
+		},
+		{
+			"text": "dia13_entry29",
+			"name": "Ali",
+			"speaker": "cajero",
+			"cond": ["mask_hablar"],
+			"resp": []
+		}
+
+    ]
+}

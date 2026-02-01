@@ -5,21 +5,21 @@
 			"text": "dia10_entry1",
 			"name": "Ali",
 			"speaker": "",
-			"cond": [""],
+			"cond": [],
 			"resp": []
 		},
 		{
 			"text": "dia10_entry2",
 			"name": "Ali",
 			"speaker": "",
-			"cond": [""],
+			"cond": [],
 			"resp": []
 		},
 		{
 			"text": "dia10_entry3",
 			"name": "Ali",
 			"speaker": "",
-			"cond": [""],
+			"cond": [],
 			"resp": []
 		}
 

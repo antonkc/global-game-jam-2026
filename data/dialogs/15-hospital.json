@@ -1,0 +1,196 @@
+{
+	"propset": "",
+	"dialog": [ 
+		{
+			"text": "dia15_entry1",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry2",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry3",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry4",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry5",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry6",
+			"name": "Ali",
+			"speaker": "",
+			"cond": [],
+			"resp": []
+		},
+
+
+		{
+			"text": "dia15_entry7",
+			"name": "Ali",
+			"speaker": "",
+			"cond": ["cond1_or_cond2"],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry8",
+			"name": "Ali",
+			"speaker": "",
+			"cond": ["1c"],
+			"resp": []
+		},
+
+
+		{
+			"text": "dia15_entry9",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": [],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry10",
+			"name": "Ali",
+			"speaker": "conchita",
+			"cond": [],
+			"resp": []
+		},
+
+
+		{
+			"text": "dia15_entry11",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": ["1a"],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry12",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": ["1a"],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry13",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": ["1a"],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry14",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": ["1a"],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry15",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": ["1a"],
+			"resp": []
+		},
+
+		{
+			"text": "dia15_entry16",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["1a"],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry17",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": ["1a"],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry18",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": ["1a"],
+			"resp": []
+		},
+
+
+		{
+			"text": "dia15_entry19",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": ["cond1_or_cond2"],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry20",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": ["cond1_or_cond2"],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry21",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": ["cond1_or_cond2"],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry22",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": ["cond1_or_cond2"],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry23",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": ["cond1_or_cond2"],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry24",
+			"name": "Noa",
+			"speaker": "noa",
+			"cond": ["cond1_or_cond2"],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry25",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": ["cond1_or_cond2"],
+			"resp": []
+		},
+		{
+			"text": "dia15_entry26",
+			"name": "Conchita",
+			"speaker": "conchita",
+			"cond": ["cond1_or_cond2"],
+			"resp": []
+		}
+    ]
+}
