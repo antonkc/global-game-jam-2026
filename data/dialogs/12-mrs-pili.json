@@ -1,0 +1,129 @@
+{
+	"propset": "",
+	"dialog": [ 
+		{
+			"text": "dia12_entry1",
+			"name": "Señora Pili",
+			"speaker": "pili",
+			"cond": [""],
+			"resp": []
+		},
+		{
+			"text": "dia12_entry2",
+			"name": "Ali",
+			"speaker": "pili",
+			"cond": [""],
+			"resp": []
+		},
+
+
+		{
+			"text": "dia12_entry3",
+			"name": "Ali",
+			"speaker": "pili",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia12_entry4",
+			"name": "Señora Pili",
+			"speaker": "pili",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia12_entry5",
+			"name": "Ali",
+			"speaker": "pili",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia12_entry6",
+			"name": "Señora Pili",
+			"speaker": "pili",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia12_entry7",
+			"name": "Ali",
+			"speaker": "pili",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia12_entry8",
+			"name": "Señora Pili",
+			"speaker": "pili",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia12_entry9",
+			"name": "Ali",
+			"speaker": "pili",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia12_entry10",
+			"name": "Ali",
+			"speaker": "pili",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia12_entry11",
+			"name": "Ali",
+			"speaker": "pili",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia12_entry12",
+			"name": "Ali",
+			"speaker": "pili",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia12_entry13",
+			"name": "Ali",
+			"speaker": "pili",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+		{
+			"text": "dia12_entry14",
+			"name": "Ali",
+			"speaker": "pili",
+			"cond": ["mask_piedra"],
+			"resp": []
+		},
+
+
+		{
+			"text": "dia12_entry15",
+			"name": "Ali",
+			"speaker": "pili",
+			"cond": ["mask_hablar "],
+			"resp": []
+		},
+		{
+			"text": "dia12_entry16",
+			"name": "Ali",
+			"speaker": "pili",
+			"cond": ["mask_hablar "],
+			"resp": []
+		},
+		{
+			"text": "dia12_entry17",
+			"name": "Ali",
+			"speaker": "pili",
+			"cond": ["mask_hablar "],
+			"resp": []
+		}
+	
+    ]
+}

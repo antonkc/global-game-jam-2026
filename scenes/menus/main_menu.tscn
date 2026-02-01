@@ -17,6 +17,7 @@ bg_color = Color(0.5065489, 0.5065489, 0.5065489, 1)
 script = ExtResource("1_ovrgc")
 
 [node name="main" type="Panel" parent="." unique_id=120695311]
+visible = false
 custom_minimum_size = Vector2(570, 0)
 offset_left = 672.0
 offset_top = 339.0
@@ -124,7 +125,6 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="credits" type="Panel" parent="." unique_id=117402062]
-visible = false
 offset_left = 516.0
 offset_top = 273.0
 offset_right = 1371.0
@@ -148,6 +148,73 @@ text = "home_back"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="credits" unique_id=772575816]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 47.0
+offset_right = 807.0
+offset_bottom = 500.0
+text = "Ali's in theater
+
+Creado con:
+	GODOT
+
+Equipo:
+Adam: Guionista principal, diseño artístico, música, actor de voz
+Sara: Diseño Artístico, creación de personajes, dibujo de escenario 
+
+Antón: Programador principal
+Lhen: Programador principal, guionista 
+
+Gemma: Programadores auxiliares, audio, guionista auxiliar, actriz de voz
+Quique: Programadores auxiliares, audio, actor de voz, diseño de las máscaras
+
+Herramientas:
+Motor de videojuegos: Godot
+Diseño Gráfico: ProCreate, Gimp2
+Audio: Audacity, OBS Studio
+Programación: GitHub, VisualStudio Code
+
+Recursos
+	Arte:
+	Trabajo original por Sara Ruano Micó
+
+	Historia:
+	Historia original. Guión por Lhen Ríos Roldán y Adam Gumiel Rico
+
+	Música
+Music by Kevin MacLeod
+https://incompetech.com/music/royalty-free/music.html
+
+Programación
+Manual de la página de Godot
+https://docs.godotengine.org/en/4.5/index.html 
+
+Sonidos: ambient y Sfx
+https://freesound.org/
+curtain_call-16.flac by Halleck -- https://freesound.org/s/18666/ -- License: Attribution 4.0
+shopping_cart.wav by philberts -- https://freesound.org/s/71511/ -- License: Creative Commons 0
+Lightswitch 1.wav by rdneubauer -- https://freesound.org/s/93777/ -- License: Creative Commons 0
+Conference room door by giddster -- https://freesound.org/s/360474/ -- License: Creative Commons 0
+DougCloset.wav by Mars420 -- https://freesound.org/s/444762/ -- License: Creative Commons 0
+crowd int medium public bathroom spanish voices heavy echo Oaxaca, Mexico.flac by kyles -- https://freesound.org/s/455728/ -- License: Creative Commons 0
+Steps on wood.wav by Hawkeye_Sprout -- https://freesound.org/s/469114/ -- License: Attribution 4.0
+Latch - door - close - metal - wood - keys - handle - rattle.wav by ValentinPetiteau -- https://freesound.org/s/564390/ -- License: Creative Commons 0
+CAR BRAKING.mp3 by milkotz -- https://freesound.org/s/613739/ -- License: Creative Commons 0
+budgie_chirp1.WAV by much_username -- https://freesound.org/s/620381/ -- License: Creative Commons 0
+Ambient living room background by cynthia_1968 -- https://freesound.org/s/646561/ -- License: Creative Commons 0
+Wooden stick falling on hollow wood by AtoMediaDesign -- https://freesound.org/s/648999/ -- License: Attribution 4.0
+light_traffic_06.wav by ania635 -- https://freesound.org/s/691525/ -- License: Creative Commons 0
+Keychain (Jingling) by moodyfingers -- https://freesound.org/s/731046/ -- License: Creative Commons 0
+Bedsheets (Getting Out of Bed) by Ultra-Edward -- https://freesound.org/s/815472/ -- License: Creative Commons 0
+cash registers spanish supermarket consum by resbat_4 -- https://freesound.org/s/829830/ -- License: Attribution 4.0
+Ambulance.wav by marcolo91 -- https://freesound.org/s/156086/ -- License: Creative Commons 0
+Cloths_hangers_sliding.wav by Jamitch2 -- https://freesound.org/s/344703/ -- License: Creative Commons 0
+TELV 152 Heavy Fabric .mp3 by mf_gloom -- https://freesound.org/s/517854/ -- License: Creative Commons 0
+Zipper Regular Pull Deep 01 by Rudmer_Rotteveel -- https://freesound.org/s/536232/ -- License: Creative Commons 0
+Distant Shop Alarm (can be looped) by Everflux -- https://freesound.org/s/262853/ -- License: Creative Commons 0
+Car travel Accident.mp3 by WaveAdventurer -- https://freesound.org/s/96345/ -- License: Attribution 4.0"
 
 [node name="settings" type="Panel" parent="." unique_id=370486570]
 visible = false
