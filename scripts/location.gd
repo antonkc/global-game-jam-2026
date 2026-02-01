@@ -1,6 +1,7 @@
 extends Node2D
 class_name Location
 
+@onready var background: AnimatedSprite2D = $stage_background
 @onready var target: CanvasItem = $target
 @onready var dialog: Dialog = $Dialog
 
@@ -54,6 +55,15 @@ func load_dialog(data: DialogData)->void:
 	target.hide()
 	for n in target.get_children(): n.hide()
 	dialog.show()
+
+func choose_background(bg_name: String)->void:
+	match bg_name:
+		"zoomed_in":
+			background.animation = bg_name
+		"zoomed_out":
+			background.animation = bg_name
+		_:
+			printerr("tried to open background with invalid name %v".format([bg_name]))
 
 func end_dialog()->void:
 	for n in target.get_children(): n.show()

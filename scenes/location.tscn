@@ -15,7 +15,15 @@ animations = [{
 "texture": SubResource("AtlasTexture_nnb31")
 }],
 "loop": true,
-"name": &"default",
+"name": &"zoomed_in",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_j6npq")
+}],
+"loop": true,
+"name": &"zoomed_out",
 "speed": 5.0
 }]
 
@@ -25,6 +33,7 @@ script = ExtResource("1_gjgjs")
 [node name="stage_background" type="AnimatedSprite2D" parent="." unique_id=163489377]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_v7tse")
+animation = &"zoomed_out"
 
 [node name="target" type="Control" parent="." unique_id=1494887586]
 layout_mode = 3
