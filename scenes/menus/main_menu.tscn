@@ -17,7 +17,6 @@ bg_color = Color(0.5065489, 0.5065489, 0.5065489, 1)
 script = ExtResource("1_ovrgc")
 
 [node name="main" type="Panel" parent="." unique_id=120695311]
-visible = false
 custom_minimum_size = Vector2(570, 0)
 offset_left = 672.0
 offset_top = 339.0
@@ -125,6 +124,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="credits" type="Panel" parent="." unique_id=117402062]
+visible = false
 offset_left = 516.0
 offset_top = 273.0
 offset_right = 1371.0

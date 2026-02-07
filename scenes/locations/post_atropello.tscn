@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dl1uthjhpcggf"]
 
 [ext_resource type="Texture2D" uid="uid://cro50jpkl0btm" path="res://assets/imgs/characters/Poli_800.png" id="1_p8r6l"]
-[ext_resource type="Script" uid="uid://bxmuuaywh0d15" path="res://scenes/locations/policia_1.gd" id="2_pbcua"]
-[ext_resource type="Script" uid="uid://cpu7us3sj3b8n" path="res://scenes/locations/policia_2.gd" id="3_3h063"]
+[ext_resource type="Script" uid="uid://bxmuuaywh0d15" path="res://scripts/locations/policia_1.gd" id="2_pbcua"]
+[ext_resource type="Script" uid="uid://cpu7us3sj3b8n" path="res://scripts/locations/policia_2.gd" id="3_3h063"]
 [ext_resource type="Texture2D" uid="uid://bl8m5hxx3yjb5" path="res://assets/imgs/props/Ambulancia.png" id="4_y82t1"]
-[ext_resource type="Script" uid="uid://c66vohgj5i540" path="res://scenes/locations/ambulancia.gd" id="5_ex8hu"]
+[ext_resource type="Script" uid="uid://c66vohgj5i540" path="res://scripts/locations/ambulancia.gd" id="5_ex8hu"]
 [ext_resource type="Texture2D" uid="uid://bprxq3mhlhghm" path="res://assets/imgs/characters/AbuMonyeca_800.png" id="6_3h063"]
 [ext_resource type="Script" uid="uid://bjsqd0jfocukr" path="res://scripts/locations/abuela_crash.gd" id="7_y82t1"]
 

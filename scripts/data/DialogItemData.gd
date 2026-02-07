@@ -8,8 +8,3 @@ var resp: Array[DialogItemResponse] = []
 
 func _init()->void:
 	pass
-
-func close()->void:
-	for r in resp:
-		r.close()
-	free()

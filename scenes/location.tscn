@@ -30,7 +30,8 @@ animations = [{
 [node name="Location" type="Node2D" unique_id=1670313935]
 script = ExtResource("1_gjgjs")
 
-[node name="stage_background" type="AnimatedSprite2D" parent="." unique_id=163489377]
+[node name="bg" type="AnimatedSprite2D" parent="." unique_id=163489377]
+z_index = -10
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_v7tse")
 animation = &"zoomed_out"
@@ -43,4 +44,4 @@ offset_bottom = 40.0
 
 [node name="Dialog" parent="." unique_id=611022932 instance=ExtResource("3_nnb31")]
 visible = false
-position = Vector2(1519.4365, 802.3824)
+z_index = 1

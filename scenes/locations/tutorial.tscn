@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://hmjind8sutd6"]
 
-[ext_resource type="Script" uid="uid://ciivgj86q5yga" path="res://scenes/locations/location_inicial.gd" id="1_soeew"]
+[ext_resource type="Script" uid="uid://ciivgj86q5yga" path="res://scripts/locations/location_inicial.gd" id="1_soeew"]
 [ext_resource type="Texture2D" uid="uid://budmijf5rrb6y" path="res://assets/imgs/backgrounds/Fondo1.png" id="2_qcbsn"]
 [ext_resource type="Texture2D" uid="uid://dsnw8y7ke8qb" path="res://assets/imgs/props/Discos.png" id="3_0nl6h"]
 [ext_resource type="Texture2D" uid="uid://cky5hle3x5u8s" path="res://assets/imgs/props/CasaAli.png" id="3_qcbsn"]
-[ext_resource type="Script" uid="uid://txmc2qi4gsfc" path="res://scenes/locations/edificio.gd" id="4_0nl6h"]
-[ext_resource type="Script" uid="uid://bilm3ffi0267s" path="res://scenes/locations/tienda.gd" id="6_tp51f"]
-[ext_resource type="Script" uid="uid://ls807yhrk4tk" path="res://scenes/locations/abu.gd" id="7_gi3qg"]
+[ext_resource type="Script" uid="uid://txmc2qi4gsfc" path="res://scripts/locations/edificio.gd" id="4_0nl6h"]
+[ext_resource type="Script" uid="uid://bilm3ffi0267s" path="res://scripts/locations/tienda.gd" id="6_tp51f"]
+[ext_resource type="Script" uid="uid://ls807yhrk4tk" path="res://scripts/locations/abu.gd" id="7_gi3qg"]
 [ext_resource type="Texture2D" uid="uid://bvgpd6xrjrii8" path="res://assets/imgs/characters/AbuSana_800.png" id="7_ylalj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0nl6h"]

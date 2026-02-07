@@ -1,9 +1,9 @@
 extends Node2D
 class_name Game
 
-@onready var animated_sprite_2d: AnimatedSprite2D = $Panel/AnimatedSprite2D
-@onready var main_menu: Node2D = $Panel/main_menu
-@onready var location: Location = $Panel/location
+@onready var bg: AnimatedSprite2D = $bg
+@onready var main_menu: Node2D = $main_menu
+@onready var location: Location = $location
 
 var running_game: GameState = null
 
@@ -25,9 +25,8 @@ func close_game()->void:
 	get_tree().quit(0)
 
 func _load_game()->void:
-	animated_sprite_2d.visible = false
-	animated_sprite_2d.stop()
-	animated_sprite_2d.hide()
+	bg.stop()
+	bg.hide()
 	main_menu.hide()
 	location.load(running_game)
 	location.show()

@@ -15,7 +15,7 @@
 			"cond": [],
 			"resp": []
 		},
-        {
+		{
 			"text": "dia6_entry3",
 			"name": "poli",
 			"speaker": "poli",
@@ -37,7 +37,7 @@
 			"resp": []
 		},
 
-        
+		
 		{
 			"text": "dia6_entry6",
 			"name": "poli",
@@ -104,5 +104,5 @@
 			"resp": []
 		}
 
-    ]
+	]
 }

@@ -1,7 +1,7 @@
 extends Node2D
 class_name Location
 
-@onready var background: AnimatedSprite2D = $stage_background
+@onready var background: AnimatedSprite2D = $bg
 @onready var target: CanvasItem = $target
 @onready var dialog: Dialog = $Dialog
 
@@ -84,7 +84,7 @@ func _load_location(loc_name: String):
 	
 	var scene: PackedScene = locations[loc_name]
 	if scene.can_instantiate():
-		var instance: Node2D = scene.instantiate(PackedScene.GEN_EDIT_STATE_INSTANCE)
+		var instance: LocationBase = scene.instantiate(PackedScene.GEN_EDIT_STATE_INSTANCE)
 		target.add_child(instance)
 		current_location = instance
 		instance.show()
@@ -92,6 +92,8 @@ func _load_location(loc_name: String):
 		target.show()
 		for n in target.get_children(): n.show()
 		dialog.hide()
+	
+		instance.start()
 	else:
 		printerr("could not instantiate scene for location")
 
