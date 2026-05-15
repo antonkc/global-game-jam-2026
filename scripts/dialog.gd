@@ -36,7 +36,7 @@ func load_dialog(in_data: DialogData, in_effects: Array[String])-> void:
 			pass
 	_next(false)
 func select_choice(i: int)->void:
-	if len(active_choices) >= i || i < 0:
+	if active_choices.size() <= i || i < 0:
 		printerr("tried to select invalid choice %s" % i)
 		return
 
@@ -44,7 +44,7 @@ func select_choice(i: int)->void:
 	_add_log_text("Ali", tr(choice.text))
 	is_choice_mode_enabled = false
 
-	var options: Array[Node] = screen.find_children("option_*")
+	var options: Array[Node] = screen.find_children("option_*", "Panel")
 	for option in options:
 		if option is Node2D:
 			option.hide()
@@ -54,16 +54,27 @@ func select_choice(i: int)->void:
 func _input(event: InputEvent) -> void:
 	if !root.visible:
 		return
-	if event.is_action_released("continue", true):
-		_next(false)
 	if event.is_action_released("sure_continue", true):
 		_next(true)
-
+	elif event.is_action_released("continue", true):
+		_next(false)
+	elif event.is_action_released("option_1", true):
+		select_choice(0)
+	elif event.is_action_released("option_2", true):
+		select_choice(1)
+	elif event.is_action_released("option_3", true):
+		select_choice(2)
+	elif event.is_action_released("option_4", true):
+		select_choice(3)
+	elif event.is_action_released("option_5", true):
+		pass # TODO: Paging
+	elif event.is_action_released("option_6", true):
+		pass # TODO: Paging
 func _next(can_exit: bool)->void:
 	if is_choice_mode_enabled:
 		_add_log_text("", tr("dialog_choose_an_option"))
 		return
-	if len(data.dialog) <= entry_idx:
+	if data.dialog.size() <= entry_idx:
 		if can_exit:
 			data = null
 			dialogo.text = ""
@@ -115,25 +126,25 @@ func _set_speech_bubble_text(msg: String)->void:
 	).from(Vector2(speech_bubble_bg.size.x, speech_bubble.get_theme_font("normal_font").get_height() + 5))
 func _set_choices(choices: Array[DialogItemResponse])->void:
 	active_choices = choices
-	if len(choices) < 1:
+	if choices.size() < 1:
 		return
 	is_choice_mode_enabled = true
 
-	for i in range(choices):
+	for i in range(choices.size()):
 		var rep = choices[i]
 
 		var option: Panel = screen.find_child("option_%s" % i)
 		if option == null:
 			printerr("could not find dialog option box number %s" % i)
 			# Maybe add more dynamically?
-			# Another choice is making sure ethe number of options is the maximum number
+			# Another choice is making sure the number of options is the maximum number
 			# of possible responses
 			continue
 		if i < 4:
 			# Show first page
 			option.show()
 
-		var text_label: RichTextLabel = screen.find_child("RichText")
+		var text_label: RichTextLabel = option.find_child("RichTextLabel")
 		text_label.text = tr(rep.text)
 
 func _is_valid_dialog_prop(prop_set: String)->bool:

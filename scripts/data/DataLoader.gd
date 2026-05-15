@@ -28,8 +28,9 @@ static func load_dialog(id: String)-> DialogData:
 			dat_entry.cond.append(cond)
 		for resp in entry.get("resp"):
 			var dat_resp = DialogItemResponse.new()
-			dat_resp.text = dat_resp.get("text")
-			dat_resp.eff = dat_resp.get("eff")
+			dat_resp.text = resp.get("text")
+			for i_eff in resp.get("eff"):
+				dat_resp.eff.append(i_eff)
 			dat_entry.resp.append(dat_resp)
 
 		dat.dialog.append(dat_entry)

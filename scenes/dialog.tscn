@@ -46,7 +46,7 @@ clip_contents = true
 offset_right = 1920.0
 offset_bottom = 700.0
 
-[node name="option_1" type="Panel" parent="screen" unique_id=843469245]
+[node name="option_0" type="Panel" parent="screen" unique_id=843469245]
 visible = false
 self_modulate = Color(18.892157, 18.892157, 18.892157, 1)
 layout_mode = 0
@@ -55,14 +55,14 @@ offset_top = 141.0
 offset_right = 1908.0
 offset_bottom = 259.0
 
-[node name="RichTextLabel" type="RichTextLabel" parent="screen/option_1" unique_id=1962760526]
+[node name="RichTextLabel" type="RichTextLabel" parent="screen/option_0" unique_id=1962760526]
 layout_mode = 0
 offset_right = 483.0
 offset_bottom = 118.0
 bbcode_enabled = true
 tab_size = 2
 
-[node name="option_2" type="Panel" parent="screen" unique_id=2125702672]
+[node name="option_1" type="Panel" parent="screen" unique_id=2125702672]
 visible = false
 self_modulate = Color(18.892157, 18.892157, 18.892157, 1)
 layout_mode = 0
@@ -71,14 +71,14 @@ offset_top = 276.0
 offset_right = 1909.0
 offset_bottom = 394.0
 
-[node name="RichTextLabel" type="RichTextLabel" parent="screen/option_2" unique_id=1053545868]
+[node name="RichTextLabel" type="RichTextLabel" parent="screen/option_1" unique_id=1053545868]
 layout_mode = 0
 offset_right = 483.0
 offset_bottom = 118.0
 bbcode_enabled = true
 tab_size = 2
 
-[node name="option_3" type="Panel" parent="screen" unique_id=1684755429]
+[node name="option_2" type="Panel" parent="screen" unique_id=1684755429]
 visible = false
 self_modulate = Color(18.892157, 18.892157, 18.892157, 1)
 layout_mode = 0
@@ -87,14 +87,14 @@ offset_top = 411.0
 offset_right = 1909.0
 offset_bottom = 529.0
 
-[node name="RichTextLabel" type="RichTextLabel" parent="screen/option_3" unique_id=1420143295]
+[node name="RichTextLabel" type="RichTextLabel" parent="screen/option_2" unique_id=1420143295]
 layout_mode = 0
 offset_right = 483.0
 offset_bottom = 118.0
 bbcode_enabled = true
 tab_size = 2
 
-[node name="option_4" type="Panel" parent="screen" unique_id=2084346235]
+[node name="option_3" type="Panel" parent="screen" unique_id=2084346235]
 visible = false
 self_modulate = Color(18.892157, 18.892157, 18.892157, 1)
 layout_mode = 0
@@ -103,7 +103,7 @@ offset_top = 545.0
 offset_right = 1909.0
 offset_bottom = 663.0
 
-[node name="RichTextLabel" type="RichTextLabel" parent="screen/option_4" unique_id=1580629001]
+[node name="RichTextLabel" type="RichTextLabel" parent="screen/option_3" unique_id=1580629001]
 layout_mode = 0
 offset_right = 483.0
 offset_bottom = 118.0

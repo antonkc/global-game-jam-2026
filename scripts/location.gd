@@ -5,7 +5,7 @@ class_name Location
 @onready var target: CanvasItem = $target
 @onready var dialog: Dialog = $Dialog
 
-var current_location: Node2D = null
+var current_location: LocationBase = null
 
 const locations: Dictionary[String, PackedScene] = {
 	"tutorial": preload("res://scenes/locations/tutorial.tscn"),
@@ -72,6 +72,8 @@ func end_dialog()->void:
 	dialog.hide()
 	target.show()
 	for n in target.get_children(): n.show()
+	if current_location != null:
+		current_location.next()
 
 func _load_location(loc_name: String):
 	print_debug("starting load for location \"%s\"" % loc_name)
