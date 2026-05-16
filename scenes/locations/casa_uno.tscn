@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://djkh8ou8mvvhe"]
 
-[node name="HomeOne" type="Node2D" unique_id=155181789]
+[node name="HomeOne" type="Control" unique_id=155181789]
 
-[node name="casa1" type="Node2D" parent="." unique_id=145377940]
+[node name="casa1" type="Control" parent="." unique_id=145377940]
 
 [node name="sofa" type="AnimatedSprite2D" parent="casa1" unique_id=2046918078]
 

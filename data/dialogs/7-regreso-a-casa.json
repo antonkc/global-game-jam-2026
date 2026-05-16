@@ -1,6 +1,6 @@
 {
 	"propset": "",
-	"dialog": [ 
+	"dialog": [
 		{
 			"text": "dia7_entry1",
 			"name": "Ali",
@@ -40,7 +40,9 @@
 			"text": "dia7_entry6",
 			"name": "Ali",
 			"speaker": "",
-			"cond": ["cond1_or_cond2"],
+			"cond": [
+				"cond1_or_cond2"
+			],
 			"resp": []
 		},
 		{
@@ -92,6 +94,5 @@
 			"cond": [],
 			"resp": []
 		}
-
 	]
 }

@@ -32,21 +32,27 @@
 			"text": "dia1_entry3",
 			"name": "mom_name",
 			"speaker": "mom",
-			"cond": ["stoneface"],
+			"cond": [
+				"stoneface"
+			],
 			"resp": []
 		},
 		{
 			"text": "dia1_entry4",
 			"name": "mom_name",
 			"speaker": "mom",
-			"cond": ["stoneface"],
+			"cond": [
+				"stoneface"
+			],
 			"resp": []
 		},
 		{
 			"text": "dia1_entry5",
 			"name": "mom_name",
 			"speaker": "mom",
-			"cond": ["blablaface"],
+			"cond": [
+				"blablaface"
+			],
 			"resp": []
 		}
 	]

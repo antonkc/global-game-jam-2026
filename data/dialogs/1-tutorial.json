@@ -1,6 +1,7 @@
 {
 	"propset": "atropello",
-	"dialog": [ {
+	"dialog": [
+		{
 			"text": "dia1_entry1",
 			"name": "Ali",
 			"speaker": "",
@@ -63,7 +64,5 @@
 			"cond": [],
 			"resp": []
 		}
-
 	]
-	
 }

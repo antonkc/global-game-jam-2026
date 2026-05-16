@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bdutwm8vdxhih" path="res://scripts/dialog.gd" id="1_36pgd"]
 [ext_resource type="Texture2D" uid="uid://cjep68f3n06hi" path="res://assets/imgs/papiro.png" id="1_pkx4w"]
+[ext_resource type="PackedScene" uid="uid://cesyhe10dj3x6" path="res://scenes/menus/button_game.tscn" id="2_tmfn4"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_36pgd"]
 animations = [{
@@ -36,79 +37,25 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Dialog" type="Node2D" unique_id=611022932]
+[node name="Dialog" type="Control" unique_id=611022932]
+custom_minimum_size = Vector2(200, 180)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_36pgd")
 
 [node name="screen" type="Panel" parent="." unique_id=1941624826]
 self_modulate = Color(1, 1, 1, 0)
 z_index = 5
 clip_contents = true
-offset_right = 1920.0
-offset_bottom = 700.0
-
-[node name="option_0" type="Panel" parent="screen" unique_id=843469245]
-visible = false
-self_modulate = Color(18.892157, 18.892157, 18.892157, 1)
-layout_mode = 0
-offset_left = 1425.0
-offset_top = 141.0
-offset_right = 1908.0
-offset_bottom = 259.0
-
-[node name="RichTextLabel" type="RichTextLabel" parent="screen/option_0" unique_id=1962760526]
-layout_mode = 0
-offset_right = 483.0
-offset_bottom = 118.0
-bbcode_enabled = true
-tab_size = 2
-
-[node name="option_1" type="Panel" parent="screen" unique_id=2125702672]
-visible = false
-self_modulate = Color(18.892157, 18.892157, 18.892157, 1)
-layout_mode = 0
-offset_left = 1426.0
-offset_top = 276.0
-offset_right = 1909.0
-offset_bottom = 394.0
-
-[node name="RichTextLabel" type="RichTextLabel" parent="screen/option_1" unique_id=1053545868]
-layout_mode = 0
-offset_right = 483.0
-offset_bottom = 118.0
-bbcode_enabled = true
-tab_size = 2
-
-[node name="option_2" type="Panel" parent="screen" unique_id=1684755429]
-visible = false
-self_modulate = Color(18.892157, 18.892157, 18.892157, 1)
-layout_mode = 0
-offset_left = 1426.0
-offset_top = 411.0
-offset_right = 1909.0
-offset_bottom = 529.0
-
-[node name="RichTextLabel" type="RichTextLabel" parent="screen/option_2" unique_id=1420143295]
-layout_mode = 0
-offset_right = 483.0
-offset_bottom = 118.0
-bbcode_enabled = true
-tab_size = 2
-
-[node name="option_3" type="Panel" parent="screen" unique_id=2084346235]
-visible = false
-self_modulate = Color(18.892157, 18.892157, 18.892157, 1)
-layout_mode = 0
-offset_left = 1426.0
-offset_top = 545.0
-offset_right = 1909.0
-offset_bottom = 663.0
-
-[node name="RichTextLabel" type="RichTextLabel" parent="screen/option_3" unique_id=1580629001]
-layout_mode = 0
-offset_right = 483.0
-offset_bottom = 118.0
-bbcode_enabled = true
-tab_size = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -380.0
 
 [node name="speaker" type="AnimatedSprite2D" parent="screen" unique_id=132468522]
 visible = false
@@ -116,31 +63,26 @@ position = Vector2(919, 399)
 sprite_frames = SubResource("SpriteFrames_36pgd")
 animation = &"angry"
 
-[node name="facecam" type="Panel" parent="." unique_id=1297005100]
-self_modulate = Color(1, 1, 1, 0.6)
-z_index = 5
-clip_contents = true
-offset_left = 1420.0
-offset_top = 701.0
-offset_right = 1920.0
-offset_bottom = 1080.0
-
 [node name="speech_bubble" type="Control" parent="." unique_id=188840331]
 z_index = 5
-layout_mode = 3
-anchors_preset = 0
+layout_mode = 1
+anchor_right = 0.32700002
+anchor_bottom = 1.0
 offset_left = 105.0
 offset_top = 89.0
-offset_right = 145.0
-offset_bottom = 129.0
+offset_right = -0.84002686
+offset_bottom = -500.0
 
 [node name="ColorRect" type="ColorRect" parent="speech_bubble" unique_id=499002732]
-layout_mode = 0
-offset_right = 522.2769
-offset_bottom = 492.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="speech_bubble" unique_id=60172381]
-layout_mode = 0
+layout_mode = 1
 offset_right = 522.0
 offset_bottom = 491.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
@@ -148,23 +90,92 @@ bbcode_enabled = true
 scroll_active = false
 tab_size = 2
 
+[node name="options" type="Control" parent="." unique_id=2126915832]
+layout_mode = 1
+anchor_left = 0.74
+anchor_right = 1.001
+anchor_bottom = 1.0
+offset_left = 0.19995117
+offset_top = 89.0
+offset_right = -0.92004395
+offset_bottom = -385.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="option_0" parent="options" unique_id=838893803 instance=ExtResource("2_tmfn4")]
+visible = false
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 10.0
+offset_top = 5.0
+offset_right = -10.0
+offset_bottom = 120.0
+grow_horizontal = 2
+input_bind = &"option_1"
+
+[node name="option_1" parent="options" unique_id=754346231 instance=ExtResource("2_tmfn4")]
+visible = false
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 10.0
+offset_top = 125.0
+offset_right = -10.0
+offset_bottom = 240.0
+grow_horizontal = 2
+input_bind = &"option_2"
+
+[node name="option_2" parent="options" unique_id=2022361538 instance=ExtResource("2_tmfn4")]
+visible = false
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 10.0
+offset_top = 245.0
+offset_right = -10.0
+offset_bottom = 360.0
+grow_horizontal = 2
+input_bind = &"option_3"
+
+[node name="option_3" parent="options" unique_id=897167436 instance=ExtResource("2_tmfn4")]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_left = 10.0
+offset_top = 365.0
+offset_right = -10.0
+offset_bottom = 480.0
+input_bind = &"option_4"
+
 [node name="dialog_log" type="Control" parent="." unique_id=889055092]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 701.0
-offset_right = 40.0
-offset_bottom = 741.0
+clip_contents = true
+layout_mode = 1
+anchor_top = 0.648
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 0.15997314
+offset_right = -380.0
+grow_vertical = 0
 
 [node name="TextureRect" type="TextureRect" parent="dialog_log" unique_id=1254952674]
-layout_mode = 0
-offset_right = 1419.0
-offset_bottom = 379.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_pkx4w")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="dialog_log" unique_id=376941216]
-layout_mode = 0
-offset_right = 1419.0
-offset_bottom = 378.0
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.003
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -0.13999999
+grow_vertical = 0
 focus_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
@@ -172,3 +183,18 @@ scroll_following = true
 scroll_following_visible_characters = true
 tab_size = 2
 selection_enabled = true
+
+[node name="facecam" type="Panel" parent="." unique_id=1297005100]
+self_modulate = Color(1, 1, 1, 0.6)
+z_index = 5
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.80200005
+anchor_top = 0.648
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.15991211
+offset_top = 0.15997314
+grow_horizontal = 0
+grow_vertical = 0

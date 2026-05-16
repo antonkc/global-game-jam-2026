@@ -64,7 +64,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="PostAtropello" type="Node2D" unique_id=1975680397]
+[node name="PostAtropello" type="Control" unique_id=1975680397]
 
 [node name="policia1" type="AnimatedSprite2D" parent="." unique_id=1961409561]
 scale = Vector2(0.25, 0.25)

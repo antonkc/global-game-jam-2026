@@ -5,13 +5,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Ali_s_in_theatre\n"
+"Project-Id-Version: ali_s_in_theatre\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 "Language: es_ES"
 
-msgid "Ali_s_in_theatre"
+msgid "ali_s_in_theatre"
 msgstr "Ali's in theatre"
 
 msgid "home_hi"
@@ -36,7 +36,6 @@ msgstr "Configuración"
 msgid "menu_quit"
 msgstr "Salir"
 
-
 msgid "dia1_entry1"
 msgstr "Llevo mucho tiempo queriendo ver esta obra"
 msgid "dia1_entry2"
@@ -56,8 +55,6 @@ msgid "dia1_entry8"
 msgstr "¡Ostras! Por esa calle paso yo todos los días, reconozco la tienda No te rayes. De ahí compré mi CD favorito de Green Day."
 msgid "dia1_entry9"
 msgstr "El semáforo está en verde y una señora mayor hace el amago de cruzar un paso de peatones."
-
-
 
 msgid "dia2_entry1"
 msgstr "Pero… ¡¿Qué?! ¡Le han atropellado!"
@@ -80,7 +77,6 @@ msgstr "El tiempo sigue, alguien debería hacer algo."
 msgid "dia2_entry10"
 msgstr "Hay que actuar."
 
-
 msgid "dia3_entry1"
 msgstr "A lo largo de la partida usaré varias máscaras. Para equiparme una basta con hacer clic en ella."
 msgid "dia3_entry2"
@@ -88,13 +84,10 @@ msgstr "Llevar una máscara u otra afectará a mis reacciones."
 msgid "dia3_entry3"
 msgstr "Para ver las máscaras e información conseguida haz clic en la mochila."
 
-
-
 msgid "dia4_entry1"
 msgstr "Voy a tener que tomar decisiones. Solo podré elegir una."
 msgid "dia4_entry2"
 msgstr "Para terminar la partida antes debo escoger Abandonar."
-
 
 msgid "dia4_entry3"
 msgstr "Oiga, ¿se encuentra bien? Por favor, permanezca consciente, quédese conmigo."
@@ -134,7 +127,6 @@ msgstr "Poco después, llegó la ambulancia."
 msgid "dia4_entry19"
 msgstr "No puedo afrontar esto ahora..."
 
-
 msgid "dia4_entry3_resp1"
 msgstr "a.  Ayudar a la mujer"
 msgid "dia4_entry3_resp2"
@@ -152,8 +144,6 @@ msgid "dia5_entry1"
 msgstr "Dejo que el personal sanitario se encargue de socorrerla."
 msgid "dia5_entry2"
 msgstr "Espero que puedan ayudarla."
-
-
 
 msgid "dia6_entry1"
 msgstr "¡Eh! ¡Usted!"
@@ -210,8 +200,6 @@ msgstr "Corrí hasta el otro lado.\n"
 "Por favor, vida, escoge a otro guerrero.\n"
 "Solo quiero llegar a casa."
 
-
-
 msgid "dia8_entry1"
 msgstr "¿Ali? ¿Ya has llegado?"
 msgid "dia8_entry2"
@@ -223,8 +211,6 @@ msgid "dia8_entry3_resp1"
 msgstr "a.  Máscara de vulnerabilidad."
 msgid "dia8_entry3_resp2"
 msgstr "b. Máscara de silencio."
-
-
 
 msgid "dia9_entry1"
 msgstr "Hola, ya he llegado"
@@ -277,7 +263,6 @@ msgstr "Está bien, buenas noches. Descansa."
 msgid "dia9_entry24"
 msgstr "Buenas noches."
 
-
 msgid "dia9_entry25"
 msgstr "Hola"
 msgid "dia9_entry26"
@@ -293,15 +278,12 @@ msgstr "Sí, pero tengo mucho sueño. Buenas noches."
 msgid "dia9_entry31"
 msgstr "Está bien, buenas noches. Descansa.\n"
 
-
 msgid "dia10_entry1"
 msgstr "Fotos con Noa. Mañana la veo."
 msgid "dia10_entry2"
 msgstr "Hace tiempo que no dibujo… Debería volver a ello."
 msgid "dia10_entry3"
 msgstr "Miro el libro que tengo ahí abandonado a medio leer y él me devuelve la mirada... Debería continuarlo antes de que se me olvide de qué iba."
-
-
 
 msgid "dia11_entry1"
 msgstr "“A mi supermercado de confianza, que me cierran.”"
@@ -325,7 +307,6 @@ msgstr "“No, si ya estaba buenísimo.\n"
 "¿Verdad?”"
 msgid "dia11_entry10"
 msgstr "“Es que antes estaba ideal-”"
-
 
 msgid "dia12_entry1"
 msgstr "Disculpa, corazón."
@@ -382,7 +363,6 @@ msgstr "“Llevaba un euro suelto…”"
 msgid "dia13_entry8"
 msgstr "¡Hola! ¿Necesitas bolsa?"
 
-
 msgid "dia13_entry9"
 msgstr "Hola. No me hace falta, llevo una, gracias."
 msgid "dia13_entry10"
@@ -412,7 +392,6 @@ msgstr "Que tengas un buen día, y no te vueles en la vuelta."
 msgid "dia13_entry22"
 msgstr "Gracias. Lo intentaré"
 
-
 msgid "dia13_entry23"
 msgstr "“Niego con la cabeza”"
 msgid "dia13_entry24"
@@ -428,9 +407,6 @@ msgstr "Aquí tienes el ticket, que tengas un buen día."
 msgid "dia3_entry29"
 msgstr "“Asiento y me voy sin responder.”"
  
-
-
-
 
 msgid "dia14_entry1"
 msgstr "“¿Me pido… el pan de queso… o… pan normal?\n"
@@ -483,7 +459,6 @@ msgstr "¿Estás bien?"
 msgid "dia14_entry24"
 msgstr "“¿Estoy bien?”"
 
-
 msgid "dia14_entry25"
 msgstr "Es complicado. Llevo unos días más agitados de lo normal."
 msgid "dia14_entry26"
@@ -518,12 +493,10 @@ msgstr "Solo quería confirmar. Lo siento, Noa. …"
 msgid "dia14_entry40"
 msgstr " ¿Cómo está? ¿Has podido ir a verla?"
 
-
 msgid "dia14_entry41"
 msgstr "Está bien, dentro de lo que cabe. Mañana voy a pasar la mañana con ella"
 msgid "dia14_entry42"
 msgstr "Ha sufrido secuelas graves, pero los médicos dicen que se recuperará en unos meses."
-
 
 msgid "dia14_entry43"
 msgstr "“Noa sigue preocupada, la veo bajando la mirada, su voz tiene un tono diferente…”"
@@ -535,7 +508,6 @@ msgid "dia14_entry46"
 msgstr "Por supuesto, quiero saber cómo está."
 msgid "dia14_entry47"
 msgstr "Vale, pues quedamos para ir a verla. Gracias, Ali"
-
 
 msgid "dia14_entry48"
 msgstr "No me apetece hablar de ello. De momento prefiero centrarme en comer algo y charlar contigo de lo que sea."
@@ -554,7 +526,6 @@ msgstr "“Pude sentir como se me iluminan los ojos al escuchar aquel título.�
 msgid "dia14_entry55"
 msgstr "¡OH, CUENTA!"
 
-
 msgid "dia15_entry1"
 msgstr "¡Buenos días, abuelita!"
 msgid "dia15_entry2"
@@ -568,7 +539,6 @@ msgstr "Ay, me suenas tanto… ¿Te conozco, Ali?"
 msgid "dia15_entry6"
 msgstr "Pues… estuve cuando ocurrió el accidente. Yo…"
 
-
 msgid "dia15_entry7"
 msgstr "Estuve con usted hasta que vino la ambulancia"
 msgid "dia15_entry8"
@@ -578,7 +548,6 @@ msgid "dia15_entry9"
 msgstr "Ya veo… entonces me ayudaste."
 msgid "dia15_entry10"
 msgstr "Apenas pude hacer algo, ojalá hubiese podido hacer más."
-
 
 msgid "dia15_entry11"
 msgstr "Ay, criatura, hiciste muchísimo. Recibí ayuda a tiempo y podré recuperarme."
@@ -598,7 +567,6 @@ msgstr "¡Minucias, hija!"
 msgid "dia15_entry18"
 msgstr "Al igual que en mi nieta, puedo ver una buena persona en ti, Ali, que es lo que importa."
 
-
 msgid "dia15_entry19"
 msgstr "Ay, criatura, no te preocupes. He tenido la suerte de contarlo, eso ya es muchísimo."
 msgid "dia15_entry20"
@@ -615,9 +583,6 @@ msgid "dia15_entry25"
 msgstr "No esperaba menos ji ji ji"
 msgid "dia15_entry26"
 msgstr "Al igual que en mi nieta, puedo ver una buena persona en ti, Ali, que es lo que importa"
-
-
-
 
 msgid "dia16_entry1"
 msgstr "“Mi madre y yo estamos viendo la tele mientras comemos.”"
@@ -656,8 +621,6 @@ msgstr "Cualquier acción, ya sea grande o pequeña, marca una diferencia; en nu
 
 msgid "dia16_entry18"
 msgstr "Se escucha el televisor de fondo..."
-
-
 
 msgid "dia16_entry"
 msgstr ""

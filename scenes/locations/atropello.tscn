@@ -409,7 +409,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Atropello" type="Node2D" unique_id=1673643850]
+[node name="Atropello" type="Control" unique_id=1673643850]
 script = ExtResource("1_2u1fi")
 metadata/_custom_type_script = "uid://lk70cul0nt02"
 

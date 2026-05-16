@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 class_name LocationBase
 
 # When Location considers the scene ready, this method is run

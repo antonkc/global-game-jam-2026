@@ -1,6 +1,7 @@
 {
 	"propset": "",
-	"dialog": [ {
+	"dialog": [
+		{
 			"text": "dia3_entry1",
 			"name": "Ali",
 			"speaker": "",

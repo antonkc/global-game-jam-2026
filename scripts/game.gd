@@ -1,8 +1,8 @@
-extends Node2D
+extends Control
 class_name Game
 
 @onready var bg: AnimatedSprite2D = $bg
-@onready var main_menu: Node2D = $main_menu
+@onready var main_menu: Control = $main_menu
 @onready var location: Location = $location
 
 var running_game: GameState = null

@@ -1,160 +1,124 @@
 [gd_scene format=3 uid="uid://dqef6kplukcj8"]
 
 [ext_resource type="Script" uid="uid://dskc2g8uponn5" path="res://scripts/ui/main_menu.gd" id="1_ovrgc"]
-[ext_resource type="Script" uid="uid://c6ptd84s485iw" path="res://scripts/ui/main_menu/butt_quit.gd" id="1_xqga4"]
-[ext_resource type="Script" uid="uid://cphp08snxx3k1" path="res://scripts/ui/main_menu/butt_create.gd" id="2_1hnlc"]
-[ext_resource type="Script" uid="uid://bf8bnspe240bp" path="res://scripts/ui/main_menu/butt_credits.gd" id="2_2o76q"]
-[ext_resource type="Script" uid="uid://w16dl313js6o" path="res://scripts/ui/main_menu/butt_continue.gd" id="2_50h1w"]
-[ext_resource type="Script" uid="uid://be3c7sg7eyi4u" path="res://scripts/ui/main_menu/butt_settings.gd" id="2_imvie"]
-[ext_resource type="Script" uid="uid://cuupeug1ef1lt" path="res://scripts/ui/main_menu/butt_back.gd" id="4_6bivr"]
 [ext_resource type="Script" uid="uid://nt1u4kjf47au" path="res://scripts/ui/main_menu/lang_selector.gd" id="6_8r73w"]
 [ext_resource type="Script" uid="uid://c6323l4m3n44e" path="res://scripts/ui/main_menu/audio_slider.gd" id="6_ng0o5"]
+[ext_resource type="PackedScene" uid="uid://d01oq40edpm4m" path="res://scenes/menus/button_menu.tscn" id="7_0hxkx"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_50h1w"]
-bg_color = Color(0.5065489, 0.5065489, 0.5065489, 1)
-
-[node name="MainMenu" type="Node2D" unique_id=981705562]
+[node name="MainMenu" type="Control" unique_id=981705562]
+custom_minimum_size = Vector2(200, 180)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_ovrgc")
 
 [node name="main" type="Panel" parent="." unique_id=120695311]
 custom_minimum_size = Vector2(570, 0)
-offset_left = 672.0
-offset_top = 339.0
-offset_right = 1249.0
-offset_bottom = 679.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -278.0
+offset_top = -190.0
+offset_right = 322.0
+offset_bottom = 140.0
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 
-[node name="butt_continue" type="Panel" parent="main" unique_id=1668781396]
-layout_mode = 0
-offset_right = 577.0
-offset_bottom = 68.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-theme_override_styles/panel = SubResource("StyleBoxFlat_50h1w")
-script = ExtResource("2_50h1w")
-is_input_focused = true
-
-[node name="label" type="Label" parent="main/butt_continue" unique_id=1831189119]
-layout_mode = 0
-offset_right = 577.0
-offset_bottom = 68.0
+[node name="butt_continue" parent="main" unique_id=838893803 instance=ExtResource("7_0hxkx")]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = 65.0
+grow_horizontal = 2
+disabled = true
 text = "home_continue"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
+input_bind = &"option_1"
 
-[node name="butt_create" type="Panel" parent="main" unique_id=1496993343]
-layout_mode = 0
-offset_top = 68.0
-offset_right = 577.0
-offset_bottom = 136.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-script = ExtResource("2_1hnlc")
-is_input_focused = true
-
-[node name="label" type="Label" parent="main/butt_create" unique_id=1714238478]
-layout_mode = 0
-offset_right = 577.0
-offset_bottom = 68.0
+[node name="butt_create" parent="main" unique_id=737290735 instance=ExtResource("7_0hxkx")]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 5.0
+offset_top = 70.0
+offset_right = -5.0
+offset_bottom = 130.0
+grow_horizontal = 2
 text = "home_create"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
+input_bind = &"option_2"
 
-[node name="butt_settings" type="Panel" parent="main" unique_id=1049395778]
-layout_mode = 0
-offset_top = 136.0
-offset_right = 577.0
-offset_bottom = 204.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-script = ExtResource("2_imvie")
-input_names = Array[String](["option_3"])
-is_input_focused = true
-
-[node name="label" type="Label" parent="main/butt_settings" unique_id=906258512]
-layout_mode = 0
-offset_right = 577.0
-offset_bottom = 68.0
+[node name="butt_settings" parent="main" unique_id=1000115508 instance=ExtResource("7_0hxkx")]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 5.0
+offset_top = 135.0
+offset_right = -5.0
+offset_bottom = 195.0
+grow_horizontal = 2
 text = "home_settings"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
+input_bind = &"option_3"
 
-[node name="butt_credits" type="Panel" parent="main" unique_id=1802138319]
-layout_mode = 0
-offset_top = 204.0
-offset_right = 577.0
-offset_bottom = 272.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-script = ExtResource("2_2o76q")
-input_names = Array[String](["option_4"])
-is_input_focused = true
-
-[node name="label" type="Label" parent="main/butt_credits" unique_id=1021251733]
-layout_mode = 0
-offset_right = 577.0
-offset_bottom = 68.0
+[node name="butt_credits" parent="main" unique_id=1004714728 instance=ExtResource("7_0hxkx")]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 5.0
+offset_top = 200.0
+offset_right = -5.0
+offset_bottom = 260.0
+grow_horizontal = 2
 text = "home_credits"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
+input_bind = &"option_4"
 
-[node name="butt_quit" type="Panel" parent="main" unique_id=535928728]
-layout_mode = 0
-offset_top = 272.0
-offset_right = 577.0
-offset_bottom = 340.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-script = ExtResource("1_xqga4")
-input_names = Array[String](["option_5"])
-is_input_focused = true
-
-[node name="label" type="Label" parent="main/butt_quit" unique_id=184995050]
-layout_mode = 0
-offset_right = 577.0
-offset_bottom = 68.0
+[node name="butt_quit" parent="main" unique_id=1172450212 instance=ExtResource("7_0hxkx")]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 5.0
+offset_top = 265.0
+offset_right = -5.0
+offset_bottom = 325.0
+grow_horizontal = 2
 text = "home_quit"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
+input_bind = &"option_5"
 
 [node name="credits" type="Panel" parent="." unique_id=117402062]
 visible = false
-offset_left = 516.0
-offset_top = 273.0
-offset_right = 1371.0
-offset_bottom = 884.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -450.0
+offset_top = -312.5
+offset_right = 450.0
+offset_bottom = 312.5
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="butt_back" type="Panel" parent="credits" unique_id=133150650]
-layout_mode = 0
-offset_left = 141.0
-offset_top = 515.0
-offset_right = 718.0
-offset_bottom = 583.0
-script = ExtResource("4_6bivr")
-input_names = Array[String](["option_1", "ui_close_dialog"])
-is_input_focused = true
-
-[node name="label" type="Label" parent="credits/butt_back" unique_id=1202113345]
-layout_mode = 0
-offset_right = 577.0
-offset_bottom = 68.0
-text = "home_back"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
-
-[node name="RichTextLabel" type="RichTextLabel" parent="credits" unique_id=772575816]
-layout_mode = 0
-offset_left = 54.0
-offset_top = 47.0
-offset_right = 807.0
-offset_bottom = 500.0
+[node name="credits_text" type="RichTextLabel" parent="credits" unique_id=772575816]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -85.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "Ali's in theater
 
 Creado con:
@@ -216,222 +180,295 @@ Zipper Regular Pull Deep 01 by Rudmer_Rotteveel -- https://freesound.org/s/53623
 Distant Shop Alarm (can be looped) by Everflux -- https://freesound.org/s/262853/ -- License: Creative Commons 0
 Car travel Accident.mp3 by WaveAdventurer -- https://freesound.org/s/96345/ -- License: Attribution 4.0"
 
+[node name="butt_c_back" parent="credits" unique_id=1273213288 instance=ExtResource("7_0hxkx")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 550.0
+offset_right = -30.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "home_back"
+input_bind = &"escape"
+
 [node name="settings" type="Panel" parent="." unique_id=370486570]
 visible = false
-offset_left = 672.0
-offset_top = 273.0
-offset_right = 1249.0
-offset_bottom = 856.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -450.0
+offset_right = 400.0
+offset_bottom = 450.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="lang" type="Panel" parent="settings" unique_id=1946664484]
-layout_mode = 0
-offset_right = 577.0
-offset_bottom = 66.0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -30.0
+offset_bottom = 80.0
+grow_horizontal = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("6_8r73w")
 
 [node name="Label" type="Label" parent="settings/lang" unique_id=1768719636]
-layout_mode = 0
-offset_right = 119.0
-offset_bottom = 66.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_right = -545.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "home_cfg_lang"
-horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="OptionButton" type="OptionButton" parent="settings/lang" unique_id=845644312]
-layout_mode = 0
-offset_left = 119.0
-offset_right = 577.0
-offset_bottom = 66.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 205.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="audio" type="Panel" parent="settings" unique_id=1103628840]
 layout_mode = 1
-offset_top = 80.0
-offset_right = 577.0
-offset_bottom = 484.0
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 20.0
+offset_top = 85.0
+offset_right = -30.0
+offset_bottom = 480.0
+grow_horizontal = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="master" type="Panel" parent="settings/audio" unique_id=849716231]
-layout_mode = 0
-offset_top = 3.0
-offset_right = 577.0
-offset_bottom = 69.0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 5.0
+offset_bottom = 65.0
+grow_horizontal = 2
 script = ExtResource("6_ng0o5")
 bus_name = "Master"
 
 [node name="Label" type="Label" parent="settings/audio/master" unique_id=1126945649]
-layout_mode = 0
-offset_right = 119.0
-offset_bottom = 66.0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 5.0
+offset_right = -545.0
+offset_bottom = 60.0
+grow_horizontal = 2
 text = "home_cfg_audio_master"
-horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="HSlider" type="HSlider" parent="settings/audio/master" unique_id=1622992970]
-layout_mode = 0
-offset_left = 119.0
-offset_right = 577.0
-offset_bottom = 66.0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 205.0
+offset_bottom = 60.0
+grow_horizontal = 2
 value = 90.0
 
 [node name="voice" type="Panel" parent="settings/audio" unique_id=766408207]
-layout_mode = 0
-offset_top = 68.0
-offset_right = 577.0
-offset_bottom = 134.0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 70.0
+offset_bottom = 130.0
+grow_horizontal = 2
 script = ExtResource("6_ng0o5")
 bus_name = "Voice"
 
 [node name="Label" type="Label" parent="settings/audio/voice" unique_id=1435044130]
-layout_mode = 0
-offset_right = 119.0
-offset_bottom = 66.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_right = -545.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "home_cfg_audio_voice"
-horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="HSlider" type="HSlider" parent="settings/audio/voice" unique_id=1710090221]
-layout_mode = 0
-offset_left = 119.0
-offset_right = 577.0
-offset_bottom = 66.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 205.0
+grow_horizontal = 2
+grow_vertical = 2
 value = 90.0
 
 [node name="sfx" type="Panel" parent="settings/audio" unique_id=1927912354]
-layout_mode = 0
-offset_top = 136.0
-offset_right = 577.0
-offset_bottom = 202.0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 135.0
+offset_bottom = 195.0
+grow_horizontal = 2
 script = ExtResource("6_ng0o5")
 bus_name = "Sfx"
 
 [node name="Label" type="Label" parent="settings/audio/sfx" unique_id=1910734534]
-layout_mode = 0
-offset_right = 119.0
-offset_bottom = 66.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_right = -545.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "home_cfg_audio_sfx"
-horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="HSlider" type="HSlider" parent="settings/audio/sfx" unique_id=408798772]
-layout_mode = 0
-offset_left = 119.0
-offset_right = 577.0
-offset_bottom = 66.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 205.0
+grow_horizontal = 2
+grow_vertical = 2
 value = 90.0
 
 [node name="music" type="Panel" parent="settings/audio" unique_id=808521972]
-layout_mode = 0
-offset_top = 202.0
-offset_right = 577.0
-offset_bottom = 268.0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 200.0
+offset_bottom = 260.0
+grow_horizontal = 2
 script = ExtResource("6_ng0o5")
 bus_name = "Music"
 
 [node name="Label" type="Label" parent="settings/audio/music" unique_id=934035800]
-layout_mode = 0
-offset_right = 119.0
-offset_bottom = 66.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_right = -545.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "home_cfg_audio_music"
-horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="HSlider" type="HSlider" parent="settings/audio/music" unique_id=1768633852]
-layout_mode = 0
-offset_left = 119.0
-offset_right = 577.0
-offset_bottom = 66.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 205.0
+grow_horizontal = 2
+grow_vertical = 2
 value = 90.0
 
 [node name="ambient" type="Panel" parent="settings/audio" unique_id=145279278]
-layout_mode = 0
-offset_top = 272.0
-offset_right = 577.0
-offset_bottom = 338.0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 265.0
+offset_bottom = 325.0
+grow_horizontal = 2
 script = ExtResource("6_ng0o5")
 bus_name = "Ambient"
 
 [node name="Label" type="Label" parent="settings/audio/ambient" unique_id=1621179159]
-layout_mode = 0
-offset_right = 119.0
-offset_bottom = 66.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_right = -545.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "home_cfg_audio_ambient"
-horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="HSlider" type="HSlider" parent="settings/audio/ambient" unique_id=656584746]
-layout_mode = 0
-offset_left = 119.0
-offset_right = 577.0
-offset_bottom = 66.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 205.0
+grow_horizontal = 2
+grow_vertical = 2
 value = 90.0
 
 [node name="alerts" type="Panel" parent="settings/audio" unique_id=1391249410]
-layout_mode = 0
-offset_top = 338.0
-offset_right = 577.0
-offset_bottom = 404.0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 330.0
+offset_bottom = 390.0
+grow_horizontal = 2
 script = ExtResource("6_ng0o5")
 bus_name = "Alerts"
 
 [node name="Label" type="Label" parent="settings/audio/alerts" unique_id=450856658]
-layout_mode = 0
-offset_right = 119.0
-offset_bottom = 66.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_right = -545.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "home_cfg_audio_alerts"
-horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="HSlider" type="HSlider" parent="settings/audio/alerts" unique_id=1562194472]
-layout_mode = 0
-offset_left = 119.0
-offset_right = 577.0
-offset_bottom = 66.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 205.0
+grow_horizontal = 2
+grow_vertical = 2
 value = 90.0
 
-[node name="butt_back" type="Panel" parent="settings" unique_id=885641074]
-layout_mode = 0
-offset_top = 515.0
-offset_right = 577.0
-offset_bottom = 583.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-script = ExtResource("4_6bivr")
-input_names = Array[String](["option_1", "ui_close_dialog"])
-is_input_focused = true
-
-[node name="label" type="Label" parent="settings/butt_back" unique_id=1327340498]
-layout_mode = 0
-offset_right = 577.0
-offset_bottom = 68.0
+[node name="butt_s_back" parent="settings" unique_id=504895457 instance=ExtResource("7_0hxkx")]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -80.0
+offset_right = -30.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 0
 text = "home_back"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
+input_bind = &"escape"
 
 [connection signal="draw" from="." to="." method="_on_draw"]
 [connection signal="hidden" from="." to="." method="_on_hidden"]
-[connection signal="mouse_entered" from="main/butt_continue" to="main/butt_continue" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="main/butt_continue" to="main/butt_continue" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="main/butt_create" to="main/butt_create" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="main/butt_create" to="main/butt_create" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="main/butt_settings" to="main/butt_settings" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="main/butt_settings" to="main/butt_settings" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="main/butt_credits" to="main/butt_credits" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="main/butt_credits" to="main/butt_credits" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="main/butt_quit" to="main/butt_quit" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="main/butt_quit" to="main/butt_quit" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="credits/butt_back" to="credits/butt_back" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="credits/butt_back" to="credits/butt_back" method="_on_mouse_exited"]
 [connection signal="item_selected" from="settings/lang/OptionButton" to="settings/lang" method="_on_option_button_item_selected"]
 [connection signal="value_changed" from="settings/audio/master/HSlider" to="settings/audio/master" method="_on_h_slider_value_changed"]
 [connection signal="value_changed" from="settings/audio/voice/HSlider" to="settings/audio/voice" method="_on_h_slider_value_changed"]
@@ -439,5 +476,3 @@ autowrap_mode = 3
 [connection signal="value_changed" from="settings/audio/music/HSlider" to="settings/audio/music" method="_on_h_slider_value_changed"]
 [connection signal="value_changed" from="settings/audio/ambient/HSlider" to="settings/audio/ambient" method="_on_h_slider_value_changed"]
 [connection signal="value_changed" from="settings/audio/alerts/HSlider" to="settings/audio/alerts" method="_on_h_slider_value_changed"]
-[connection signal="mouse_entered" from="settings/butt_back" to="settings/butt_back" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="settings/butt_back" to="settings/butt_back" method="_on_mouse_exited"]

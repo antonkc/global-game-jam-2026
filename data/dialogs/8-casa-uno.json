@@ -1,6 +1,6 @@
 {
 	"propset": "",
-	"dialog": [ 
+	"dialog": [
 		{
 			"text": "dia8_entry1",
 			"name": "Madre",
@@ -22,6 +22,5 @@
 			"cond": [],
 			"resp": []
 		}
-
-    ]
+	]
 }

@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 class_name Location
 
 @onready var background: AnimatedSprite2D = $bg
@@ -7,7 +7,7 @@ class_name Location
 
 var current_location: LocationBase = null
 
-const locations: Dictionary[String, PackedScene] = {
+const locations: Dictionary[StringName, PackedScene] = {
 	"tutorial": preload("res://scenes/locations/tutorial.tscn"),
 	"atropello": preload("res://scenes/locations/atropello.tscn"),
 	"caen_mascaras": preload("res://scenes/locations/caen_mascaras.tscn"),
@@ -59,11 +59,11 @@ func load_dialog(data: DialogData)->void:
 	for n in target.get_children(): n.hide()
 	dialog.show()
 
-func choose_background(bg_name: String)->void:
+func choose_background(bg_name: StringName)->void:
 	match bg_name:
-		"zoomed_in":
+		&"zoomed_in":
 			background.animation = bg_name
-		"zoomed_out":
+		&"zoomed_out":
 			background.animation = bg_name
 		_:
 			printerr("tried to open background with invalid name %s" % bg_name)
@@ -75,7 +75,7 @@ func end_dialog()->void:
 	if current_location != null:
 		current_location.next()
 
-func _load_location(loc_name: String):
+func _load_location(loc_name: StringName):
 	print_debug("starting load for location \"%s\"" % loc_name)
 	if !_is_valid_location(game_state.location):
 		printerr("tried to load invalid location \"%s\"" % loc_name)
@@ -99,7 +99,7 @@ func _load_location(loc_name: String):
 	else:
 		printerr("could not instantiate scene for location")
 
-func _is_valid_location(loc: String)->bool:
+func _is_valid_location(loc: StringName)->bool:
 	for l in locations.keys():
 		if loc == l:
 			return true

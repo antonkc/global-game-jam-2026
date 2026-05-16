@@ -1,6 +1,7 @@
 {
 	"propset": "",
-	"dialog": [ {
+	"dialog": [
+		{
 			"text": "dia2_entry1",
 			"name": "Ali",
 			"speaker": "",
@@ -70,7 +71,5 @@
 			"cond": [],
 			"resp": []
 		}
-
 	]
-	
 }

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://o5fpufsojeuf"]
+
+[ext_resource type="PackedScene" uid="uid://cesyhe10dj3x6" path="res://scenes/menus/button_game.tscn" id="1_3kqt3"]
+
+[node name="Buttons" type="Node2D" unique_id=508338049]
+
+[node name="GameButton" parent="." unique_id=838893803 instance=ExtResource("1_3kqt3")]
+offset_left = 89.0
+offset_top = 77.0
+offset_right = 404.0
+offset_bottom = 140.0
+text = "ali_s_in_theatre"
+input_bind = &"option_1"
+
+[node name="GameButton2" parent="." unique_id=923427203 instance=ExtResource("1_3kqt3")]
+offset_left = 89.0
+offset_top = 154.0
+offset_right = 404.0
+offset_bottom = 217.0
+text = "ali_s_in_theatre"
+input_bind = &"option_1"

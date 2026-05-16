@@ -69,9 +69,9 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="StartTheatre" type="Node2D" unique_id=244310463]
+[node name="StartTheatre" type="Control" unique_id=244310463]
 
-[node name="Location_Inicial" type="Node2D" parent="." unique_id=479184083]
+[node name="Location_Inicial" type="Control" parent="." unique_id=479184083]
 script = ExtResource("1_soeew")
 
 [node name="espectadores" type="Sprite2D" parent="Location_Inicial" unique_id=1989354840]
