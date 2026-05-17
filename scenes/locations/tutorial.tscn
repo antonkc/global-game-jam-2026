@@ -4,9 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://budmijf5rrb6y" path="res://assets/imgs/backgrounds/Fondo1.png" id="2_qcbsn"]
 [ext_resource type="Texture2D" uid="uid://dsnw8y7ke8qb" path="res://assets/imgs/props/Discos.png" id="3_0nl6h"]
 [ext_resource type="Texture2D" uid="uid://cky5hle3x5u8s" path="res://assets/imgs/props/CasaAli.png" id="3_qcbsn"]
-[ext_resource type="Script" uid="uid://txmc2qi4gsfc" path="res://scripts/locations/edificio.gd" id="4_0nl6h"]
-[ext_resource type="Script" uid="uid://bilm3ffi0267s" path="res://scripts/locations/tienda.gd" id="6_tp51f"]
-[ext_resource type="Script" uid="uid://ls807yhrk4tk" path="res://scripts/locations/abu.gd" id="7_gi3qg"]
 [ext_resource type="Texture2D" uid="uid://bvgpd6xrjrii8" path="res://assets/imgs/characters/AbuSana_800.png" id="7_ylalj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0nl6h"]
@@ -84,14 +81,11 @@ sprite_frames = SubResource("SpriteFrames_bvyj0")
 [node name="Edificio" type="AnimatedSprite2D" parent="Location_Inicial" unique_id=681004207]
 scale = Vector2(0.65, 0.65)
 sprite_frames = SubResource("SpriteFrames_tp51f")
-script = ExtResource("4_0nl6h")
 
 [node name="Tienda" type="AnimatedSprite2D" parent="Location_Inicial" unique_id=1795757560]
 scale = Vector2(0.65, 0.65)
 sprite_frames = SubResource("SpriteFrames_ylalj")
-script = ExtResource("6_tp51f")
 
 [node name="Abu" type="AnimatedSprite2D" parent="Location_Inicial" unique_id=363627162]
 scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_30r6o")
-script = ExtResource("7_gi3qg")

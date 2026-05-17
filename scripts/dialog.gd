@@ -79,22 +79,27 @@ func _next(can_exit: bool)->void:
 		_add_log_text("", tr("dialog_choose_an_option"))
 		return
 	if _data.dialog.size() <= _entry_idx:
-		if can_exit:
-			_data = null
-			_dialog.text = ""
-			_speech_bubble.text = ""
-			_is_choice_mode_enabled = false
-			_active_choices = []
-			if _controller != null:
-				_controller.end_dialog()
-			else:
-				printerr("tried to end dialog in a dialog only scene")
-		else:
-			_add_log_text("", tr("dialog_confirm_exit"))
+		_exit_dialog(can_exit)
 		return
 
 	_dialog.show()
-	var curr_entry: DialogItemData = _data.dialog[_entry_idx]
+	var curr_entry: DialogItemData = null
+	for _idx in range(_entry_idx, _data.dialog.size()):
+		_entry_idx = _idx
+		curr_entry = _data.dialog[_entry_idx]
+		var condition_met = true
+		
+		for cond in curr_entry.cond:
+			if not (cond in _effects):
+				condition_met = false
+
+		if condition_met:
+			break
+		else:
+			curr_entry = null
+	if curr_entry == null:
+		_exit_dialog(can_exit)
+		return
 	var text: String = tr(curr_entry.text)
 
 	_add_log_text(curr_entry.speaker_name, text)
@@ -150,6 +155,20 @@ func _set_choices_texts(choices: Array[DialogItemResponse])->void:
 			continue
 		option.show()
 		option.text = rep.text
+
+func _exit_dialog(can_exit: bool):
+	if can_exit:
+		_data = null
+		_dialog.text = ""
+		_speech_bubble.text = ""
+		_is_choice_mode_enabled = false
+		_active_choices = []
+		if _controller != null:
+			_controller.end_dialog()
+		else:
+			printerr("tried to end dialog in a dialog only scene")
+	else:
+		_add_log_text("", tr("dialog_confirm_exit"))
 
 func _is_valid_dialog_prop(prop_set: String)->bool:
 	for p in prop_sets.keys():

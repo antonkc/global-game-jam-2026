@@ -16,19 +16,27 @@
 			"resp": [
 				{
 					"text": "dia4_entry3_resp1",
-					"eff": "1a"
+					"eff": [
+						"1a"
+					]
 				},
 				{
 					"text": "dia4_entry3_resp2",
-					"eff": "1b"
+					"eff": [
+						"1b"
+					]
 				},
 				{
 					"text": "dia4_entry3_resp3",
-					"eff": "1c"
+					"eff": [
+						"1c"
+					]
 				},
 				{
 					"text": "dia4_entry3_resp4",
-					"eff": "1d"
+					"eff": [
+						"1d"
+					]
 				}
 			]
 		},
