@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://o5fpufsojeuf"]
 
-[ext_resource type="PackedScene" uid="uid://cesyhe10dj3x6" path="res://scenes/menus/button_game.tscn" id="1_3kqt3"]
+[ext_resource type="PackedScene" uid="uid://cesyhe10dj3x6" path="res://scenes/menus/custom_button.tscn" id="1_3kqt3"]
+[ext_resource type="Theme" uid="uid://bv7jt6ocap558" path="res://assets/themes/main.tres" id="2_mk4mw"]
+
+[sub_resource type="Theme" id="Theme_3kqt3"]
+default_font_size = 0
 
 [node name="Buttons" type="Node2D" unique_id=508338049]
 
@@ -9,6 +13,7 @@ offset_left = 89.0
 offset_top = 77.0
 offset_right = 404.0
 offset_bottom = 140.0
+theme = SubResource("Theme_3kqt3")
 text = "ali_s_in_theatre"
 input_bind = &"option_1"
 
@@ -17,5 +22,6 @@ offset_left = 89.0
 offset_top = 154.0
 offset_right = 404.0
 offset_bottom = 217.0
+theme = ExtResource("2_mk4mw")
 text = "ali_s_in_theatre"
 input_bind = &"option_1"

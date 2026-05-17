@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://dqef6kplukcj8"]
 
+[ext_resource type="Theme" uid="uid://bv7jt6ocap558" path="res://assets/themes/main.tres" id="1_5u25p"]
 [ext_resource type="Script" uid="uid://dskc2g8uponn5" path="res://scripts/ui/main_menu.gd" id="1_ovrgc"]
 [ext_resource type="Script" uid="uid://nt1u4kjf47au" path="res://scripts/ui/main_menu/lang_selector.gd" id="6_8r73w"]
 [ext_resource type="Script" uid="uid://c6323l4m3n44e" path="res://scripts/ui/main_menu/audio_slider.gd" id="6_ng0o5"]
-[ext_resource type="PackedScene" uid="uid://d01oq40edpm4m" path="res://scenes/menus/button_menu.tscn" id="7_0hxkx"]
+[ext_resource type="PackedScene" uid="uid://cesyhe10dj3x6" path="res://scenes/menus/custom_button.tscn" id="7_0hxkx"]
 
 [node name="MainMenu" type="Control" unique_id=981705562]
 custom_minimum_size = Vector2(200, 180)
@@ -13,83 +14,58 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_5u25p")
 script = ExtResource("1_ovrgc")
 
-[node name="main" type="Panel" parent="." unique_id=120695311]
-custom_minimum_size = Vector2(570, 0)
+[node name="main" type="MarginContainer" parent="." unique_id=1935873666]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -278.0
-offset_top = -190.0
-offset_right = 322.0
-offset_bottom = 140.0
+offset_left = -300.0
+offset_top = -58.0
+offset_right = 300.0
+offset_bottom = 58.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
 
-[node name="butt_continue" parent="main" unique_id=838893803 instance=ExtResource("7_0hxkx")]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = 5.0
-offset_top = 5.0
-offset_right = -5.0
-offset_bottom = 65.0
-grow_horizontal = 2
+[node name="rows" type="VBoxContainer" parent="main" unique_id=1783231203]
+layout_mode = 2
+
+[node name="butt_continue" parent="main/rows" unique_id=838893803 instance=ExtResource("7_0hxkx")]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
 disabled = true
 text = "home_continue"
 input_bind = &"option_1"
 
-[node name="butt_create" parent="main" unique_id=737290735 instance=ExtResource("7_0hxkx")]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = 5.0
-offset_top = 70.0
-offset_right = -5.0
-offset_bottom = 130.0
-grow_horizontal = 2
+[node name="butt_create" parent="main/rows" unique_id=737290735 instance=ExtResource("7_0hxkx")]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
 text = "home_create"
 input_bind = &"option_2"
 
-[node name="butt_settings" parent="main" unique_id=1000115508 instance=ExtResource("7_0hxkx")]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = 5.0
-offset_top = 135.0
-offset_right = -5.0
-offset_bottom = 195.0
-grow_horizontal = 2
+[node name="butt_settings" parent="main/rows" unique_id=1000115508 instance=ExtResource("7_0hxkx")]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
 text = "home_settings"
 input_bind = &"option_3"
 
-[node name="butt_credits" parent="main" unique_id=1004714728 instance=ExtResource("7_0hxkx")]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = 5.0
-offset_top = 200.0
-offset_right = -5.0
-offset_bottom = 260.0
-grow_horizontal = 2
+[node name="butt_credits" parent="main/rows" unique_id=1004714728 instance=ExtResource("7_0hxkx")]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
 text = "home_credits"
 input_bind = &"option_4"
 
-[node name="butt_quit" parent="main" unique_id=1172450212 instance=ExtResource("7_0hxkx")]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = 5.0
-offset_top = 265.0
-offset_right = -5.0
-offset_bottom = 325.0
-grow_horizontal = 2
+[node name="butt_quit" parent="main/rows" unique_id=1172450212 instance=ExtResource("7_0hxkx")]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
 text = "home_quit"
 input_bind = &"option_5"
 

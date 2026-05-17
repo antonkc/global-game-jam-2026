@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bhvigq6q880ar"]
 
+[ext_resource type="Theme" uid="uid://bv7jt6ocap558" path="res://assets/themes/main.tres" id="1_iywne"]
 [ext_resource type="Script" uid="uid://g7r1f8hvtrnp" path="res://scripts/game.gd" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://dqef6kplukcj8" path="res://scenes/menus/menu_main.tscn" id="2_iywne"]
 [ext_resource type="Texture2D" uid="uid://budmijf5rrb6y" path="res://assets/imgs/backgrounds/Fondo1.png" id="2_lbhrr"]
@@ -23,6 +24,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_iywne")
 script = ExtResource("1_uwrxv")
 
 [node name="bg" type="AnimatedSprite2D" parent="." unique_id=1625800676]

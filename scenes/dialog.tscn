@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bdutwm8vdxhih" path="res://scripts/dialog.gd" id="1_36pgd"]
 [ext_resource type="Texture2D" uid="uid://cjep68f3n06hi" path="res://assets/imgs/papiro.png" id="1_pkx4w"]
-[ext_resource type="PackedScene" uid="uid://cesyhe10dj3x6" path="res://scenes/menus/button_game.tscn" id="2_tmfn4"]
+[ext_resource type="PackedScene" uid="uid://cesyhe10dj3x6" path="res://scenes/menus/custom_button.tscn" id="2_tmfn4"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_36pgd"]
 animations = [{

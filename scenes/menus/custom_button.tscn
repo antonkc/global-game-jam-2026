@@ -2,7 +2,19 @@
 
 [ext_resource type="Script" uid="uid://flbmdu0y8omn" path="res://scripts/ui/custom_button.gd" id="1_0jewc"]
 
-[node name="GameButton" type="BaseButton" unique_id=838893803]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rte45"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="CustomButton" type="BaseButton" unique_id=838893803]
 unique_name_in_owner = false
 process_mode = 0
 process_priority = 0
@@ -85,8 +97,7 @@ shortcut_in_tooltip = true
 script = ExtResource("1_0jewc")
 metadata/_custom_type_script = "uid://flbmdu0y8omn"
 
-[node name="bg" type="ColorRect" parent="." unique_id=709017433]
-layout_direction = 2
+[node name="bg" type="PanelContainer" parent="." unique_id=1485429473]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -94,23 +105,20 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
-color = Color(1, 0.928, 0.82, 1)
+theme_override_styles/panel = SubResource("StyleBoxFlat_rte45")
 
 [node name="label" type="RichTextLabel" parent="." unique_id=1858636527]
 clip_contents = false
 layout_direction = 1
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
+anchors_preset = 14
 anchor_top = 0.5
-anchor_right = 0.5
+anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -98.0
-offset_right = 99.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
-theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(0.875, 0.875, 0.875, 1)
 bbcode_enabled = true
 fit_content = true
 scroll_active = false

@@ -12,15 +12,15 @@ extends Control
 ]
 
 func _ready() -> void:
-	var butt_continue: CustomButton = $main/butt_continue
+	var butt_continue: CustomButton = $main/rows/butt_continue
 	butt_continue.action = _continue
-	var butt_create: CustomButton = $main/butt_create
+	var butt_create: CustomButton = $main/rows/butt_create
 	butt_create.action = _new_game
-	var butt_settings: CustomButton = $main/butt_settings
+	var butt_settings: CustomButton = $main/rows/butt_settings
 	butt_settings.action = _settings
-	var butt_credits: CustomButton = $main/butt_credits
+	var butt_credits: CustomButton = $main/rows/butt_credits
 	butt_credits.action = _credits
-	var butt_quit: CustomButton = $main/butt_quit
+	var butt_quit: CustomButton = $main/rows/butt_quit
 	butt_quit.action = _quit
 
 	var butt_c_back: CustomButton = $credits/butt_c_back
