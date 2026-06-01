@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bmtc7uvn8hoa5"]
+
+[ext_resource type="Script" uid="uid://cios7ccuuoe0i" path="res://scripts/ui/clickable_area.gd" id="1_wg6hd"]
+
+[node name="ClickableArea" type="Control" unique_id=93127149]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 3
+anchors_preset = 0
+focus_mode = 2
+script = ExtResource("1_wg6hd")
+metadata/_custom_type_script = "uid://cios7ccuuoe0i"
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
