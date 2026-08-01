@@ -8,14 +8,9 @@ class_name Location
 var current_location: LocationBase = null
 
 const locations: Dictionary[StringName, PackedScene] = {
-	"tutorial": preload("res://scenes/locations/tutorial.tscn"),
-	"atropello": preload("res://scenes/locations/atropello.tscn"),
-	"caen_mascaras": preload("res://scenes/locations/caen_mascaras.tscn"),
-	"post_atropello": preload("res://scenes/locations/post_atropello.tscn"),
-	"policia": preload("res://scenes/locations/policia.tscn"),
+	"tutorial": preload("res://scenes/locations/teatro.tscn"),
 	"puente": preload("res://scenes/locations/puente.tscn"),
 	"casa_uno": preload("res://scenes/locations/casa_uno.tscn"),
-	"habitacion": preload("res://scenes/locations/habitacion.tscn"),
 	"supermercado": preload("res://scenes/locations/supermercado.tscn"),
 	"restaurante": preload("res://scenes/locations/restaurante.tscn"),
 	"casa_final": preload("res://scenes/locations/casa_final.tscn"),

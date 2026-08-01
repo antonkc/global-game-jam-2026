@@ -12,15 +12,13 @@ extends Control
 ]
 
 func _ready() -> void:
-	var butt_continue: CustomButton = $main/rows/butt_continue
-	butt_continue.action = _continue
-	var butt_create: CustomButton = $main/rows/butt_create
-	butt_create.action = _new_game
-	var butt_settings: CustomButton = $main/rows/butt_settings
+	var butt_play: CustomButton = $main/margin/rows/butt_play
+	butt_play.action = _play
+	var butt_settings: CustomButton = $main/margin/rows/butt_settings
 	butt_settings.action = _settings
-	var butt_credits: CustomButton = $main/rows/butt_credits
+	var butt_credits: CustomButton = $main/margin/rows/butt_credits
 	butt_credits.action = _credits
-	var butt_quit: CustomButton = $main/rows/butt_quit
+	var butt_quit: CustomButton = $main/margin/rows/butt_quit
 	butt_quit.action = _quit
 
 	var butt_c_back: CustomButton = $credits/butt_c_back
@@ -28,13 +26,7 @@ func _ready() -> void:
 	var butt_s_back: CustomButton = $settings/butt_s_back
 	butt_s_back.action = _back_to_main
 
-func _continue() -> void:
-	var parent: Game = root.find_parent("Game")
-	if parent == null:
-		printerr("tried to create game without Game root node")
-		return
-	parent.load_running_game()
-func _new_game() -> void:
+func _play() -> void:
 	var parent: Game = root.find_parent("Game")
 	if parent == null:
 		printerr("tried to create game without Game root node")

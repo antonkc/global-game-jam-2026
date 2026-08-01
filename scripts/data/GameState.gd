@@ -1,6 +1,6 @@
 class_name GameState
 
-var location: String = "atropello"
+var location: String = "tutorial"
 var effects: Array[String] = []
 
 func _init()->void:

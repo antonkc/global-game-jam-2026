@@ -26,11 +26,17 @@ static func load_dialog(id: String)-> DialogData:
 
 		for cond in entry.get("cond"):
 			dat_entry.cond.append(cond)
+		for visual in entry.get("triggers"):
+			dat_entry.triggers.append(visual)
 		for resp in entry.get("resp"):
 			var dat_resp = DialogItemResponse.new()
 			dat_resp.text = resp.get("text")
 			for i_eff in resp.get("eff"):
 				dat_resp.eff.append(i_eff)
+			for i_cond in resp.get("cond"):
+				dat_resp.cond.append(i_cond)
+			for i_visual in resp.get("triggers"):
+				dat_resp.triggers.append(i_visual)
 			dat_entry.resp.append(dat_resp)
 
 		dat.dialog.append(dat_entry)

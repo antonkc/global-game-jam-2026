@@ -1,16 +1,16 @@
 {
+	"$schema": "../dialogs.schema.json",
 	"propset": "street",
 	"dialog": [
 		{
 			"text": "dia1_entry1",
-			"name": "Ali",
-			"speaker": "",
+			"speaker": "Ali",
 			"cond": [],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia1_entry2",
-			"name": "mom_name",
 			"speaker": "mom",
 			"cond": [],
 			"resp": [
@@ -18,42 +18,47 @@
 					"text": "dia1_entry2_resp1",
 					"eff": [
 						"stoneface"
-					]
+					],
+					"cond": [],
+					"triggers": []
 				},
 				{
 					"text": "dia1_entry2_resp2",
 					"eff": [
 						"blablaface"
-					]
+					],
+					"cond": [],
+					"triggers": []
 				}
-			]
+			],
+			"triggers": []
 		},
 		{
 			"text": "dia1_entry3",
-			"name": "mom_name",
 			"speaker": "mom",
 			"cond": [
 				"stoneface"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia1_entry4",
-			"name": "mom_name",
 			"speaker": "mom",
 			"cond": [
 				"stoneface"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia1_entry5",
-			"name": "mom_name",
 			"speaker": "mom",
 			"cond": [
 				"blablaface"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		}
 	]
 }

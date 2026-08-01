@@ -10,8 +10,7 @@ func start()->void:
 
 func next()->void:
 	match current_step:
-		0: _load_dialog("4-post_atropello")
-		10: _opening()
+		0: _opening()
 		1: _load_dialog("2-atropello")
 		2: _load_dialog("3-caen_mascaras")
 		3: _load_dialog("4-post_atropello")

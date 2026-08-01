@@ -1,8 +1,9 @@
 extends Control
 class_name Dialog
 
-const prop_sets: Dictionary[StringName, PackedScene] = {
-}
+
+# TODO: Make this not broken :D
+
 const _CHOICES_PER_PAGE: int = 4
 
 @export var char_speed: float = 25.0

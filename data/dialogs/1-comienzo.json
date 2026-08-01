@@ -1,0 +1,41 @@
+{
+	"$schema": "../dialogs.schema.json",
+	"propset": "",
+	"dialog": [
+		{
+			"text": "dia1_entry1",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		},
+		{
+			"text": "dia1_entry2",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		},
+		{
+			"text": "dia1_entry3",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		},
+		{
+			"text": "dia1_entry4",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		},
+		{
+			"text": "dia1_entry5",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		}
+	]
+}

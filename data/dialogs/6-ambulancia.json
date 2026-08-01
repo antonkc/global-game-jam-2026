@@ -1,0 +1,20 @@
+{
+	"$schema": "../dialogs.schema.json",
+	"propset": "",
+	"dialog": [
+		{
+			"text": "dia5_entry1",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		},
+		{
+			"text": "dia5_entry2",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		}
+	]
+}

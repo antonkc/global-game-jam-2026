@@ -1,41 +1,16 @@
 [gd_scene format=3 uid="uid://c656ccj3d44xu"]
 
-[ext_resource type="Script" uid="uid://bdutwm8vdxhih" path="res://scripts/dialog.gd" id="1_36pgd"]
-[ext_resource type="Texture2D" uid="uid://cjep68f3n06hi" path="res://assets/imgs/papiro.png" id="1_pkx4w"]
+[ext_resource type="Script" uid="uid://cumso0t3gfp75" path="res://assets/text/thought.gd" id="1_36pgd"]
+[ext_resource type="Shader" uid="uid://dpvlq5tp73os" path="res://assets/shaders/blur.gdshader" id="2_4wims"]
 [ext_resource type="PackedScene" uid="uid://cesyhe10dj3x6" path="res://scenes/menus/custom_button.tscn" id="2_tmfn4"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_36pgd"]
-animations = [{
-"frames": [],
-"loop": true,
-"name": &"angry",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"hyped",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"sad",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"serious",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"shrug",
-"speed": 5.0
-}]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_b1kyf"]
+shader = ExtResource("2_4wims")
+shader_parameter/lod = 2.50000011875
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_tmfn4"]
+script = ExtResource("1_36pgd")
+metadata/_custom_type_script = "uid://cumso0t3gfp75"
 
 [node name="Dialog" type="Control" unique_id=611022932]
 custom_minimum_size = Vector2(200, 180)
@@ -45,156 +20,160 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_36pgd")
 
-[node name="screen" type="Panel" parent="." unique_id=1941624826]
-self_modulate = Color(1, 1, 1, 0)
-z_index = 5
-clip_contents = true
+[node name="backdrop" type="ColorRect" parent="." unique_id=843708991]
+material = SubResource("ShaderMaterial_b1kyf")
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -380.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="speaker" type="AnimatedSprite2D" parent="screen" unique_id=132468522]
-visible = false
-position = Vector2(919, 399)
-sprite_frames = SubResource("SpriteFrames_36pgd")
-animation = &"angry"
+[node name="stage" type="Control" parent="." unique_id=1551136539]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="speech_bubble" type="Control" parent="." unique_id=188840331]
 z_index = 5
 layout_mode = 1
-anchor_right = 0.32700002
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 105.0
-offset_top = 89.0
-offset_right = -0.84002686
-offset_bottom = -500.0
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset_ratio = Vector2(0.5, 0.5)
 
-[node name="ColorRect" type="ColorRect" parent="speech_bubble" unique_id=499002732]
+[node name="MainTextBg" type="Panel" parent="speech_bubble" unique_id=795300510]
+custom_minimum_size = Vector2(450, 300)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 500.0
+offset_top = -350.0
+offset_right = -500.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_type_variation = &"SpeechPanel"
+
+[node name="pad" type="MarginContainer" parent="speech_bubble/MainTextBg" unique_id=595719271]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
 
-[node name="RichTextLabel" type="RichTextLabel" parent="speech_bubble" unique_id=60172381]
-layout_mode = 1
-offset_right = 522.0
-offset_bottom = 491.0
+[node name="MainText" type="RichTextLabel" parent="speech_bubble/MainTextBg/pad" unique_id=60172381]
+layout_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
 scroll_active = false
 tab_size = 2
+custom_effects = [SubResource("RichTextEffect_tmfn4")]
 
-[node name="options" type="Control" parent="." unique_id=2126915832]
+[node name="SpeakerBg" type="Panel" parent="speech_bubble" unique_id=1928603421]
+custom_minimum_size = Vector2(120, 25)
 layout_mode = 1
-anchor_left = 0.74
-anchor_right = 1.001
-anchor_bottom = 1.0
-offset_left = 0.19995117
-offset_top = 89.0
-offset_right = -0.92004395
-offset_bottom = -385.0
-grow_horizontal = 0
-grow_vertical = 2
-
-[node name="option_0" parent="options" unique_id=838893803 instance=ExtResource("2_tmfn4")]
-visible = false
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = 10.0
-offset_top = 5.0
-offset_right = -10.0
-offset_bottom = 120.0
-grow_horizontal = 2
-input_bind = &"option_1"
-
-[node name="option_1" parent="options" unique_id=754346231 instance=ExtResource("2_tmfn4")]
-visible = false
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = 10.0
-offset_top = 125.0
-offset_right = -10.0
-offset_bottom = 240.0
-grow_horizontal = 2
-input_bind = &"option_2"
-
-[node name="option_2" parent="options" unique_id=2022361538 instance=ExtResource("2_tmfn4")]
-visible = false
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = 10.0
-offset_top = 245.0
-offset_right = -10.0
-offset_bottom = 360.0
-grow_horizontal = 2
-input_bind = &"option_3"
-
-[node name="option_3" parent="options" unique_id=897167436 instance=ExtResource("2_tmfn4")]
-visible = false
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-offset_left = 10.0
-offset_top = 365.0
-offset_right = -10.0
-offset_bottom = 480.0
-input_bind = &"option_4"
-
-[node name="dialog_log" type="Control" parent="." unique_id=889055092]
-clip_contents = true
-layout_mode = 1
-anchor_top = 0.648
+anchors_preset = 12
+anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 0.15997314
-offset_right = -380.0
+offset_left = 500.0
+offset_top = -390.0
+offset_right = -1240.0
+offset_bottom = -355.0
+grow_horizontal = 2
 grow_vertical = 0
+theme_type_variation = &"SpeechPanel"
 
-[node name="TextureRect" type="TextureRect" parent="dialog_log" unique_id=1254952674]
+[node name="Speaker" type="RichTextLabel" parent="speech_bubble/SpeakerBg" unique_id=247721627]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_pkx4w")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="dialog_log" unique_id=376941216]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.003
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -0.13999999
-grow_vertical = 0
-focus_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
-scroll_following = true
-scroll_following_visible_characters = true
+scroll_active = false
 tab_size = 2
-selection_enabled = true
+horizontal_alignment = 1
+vertical_alignment = 1
+custom_effects = [SubResource("RichTextEffect_tmfn4")]
 
-[node name="facecam" type="Panel" parent="." unique_id=1297005100]
-self_modulate = Color(1, 1, 1, 0.6)
-z_index = 5
-clip_contents = true
+[node name="controls" type="PanelContainer" parent="." unique_id=554490755]
+visible = false
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.80200005
-anchor_top = 0.648
+anchors_preset = 14
+anchor_top = 0.5
 anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 0.15991211
-offset_top = 0.15997314
-grow_horizontal = 0
-grow_vertical = 0
+anchor_bottom = 0.5
+offset_left = 720.0
+offset_right = -720.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="controls" unique_id=1124921219]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="controls/MarginContainer" unique_id=742180937]
+layout_mode = 2
+
+[node name="option_0" parent="controls/MarginContainer/VBoxContainer" unique_id=81429982 instance=ExtResource("2_tmfn4")]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_type_variation = &"SpeechButton"
+input_bind = &"option_1"
+
+[node name="option_1" parent="controls/MarginContainer/VBoxContainer" unique_id=267927470 instance=ExtResource("2_tmfn4")]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+theme_type_variation = &"SpeechButton"
+input_bind = &"option_2"
+
+[node name="option_2" parent="controls/MarginContainer/VBoxContainer" unique_id=1988450637 instance=ExtResource("2_tmfn4")]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+theme_type_variation = &"SpeechButton"
+input_bind = &"option_3"
+
+[node name="option_3" parent="controls/MarginContainer/VBoxContainer" unique_id=1656724246 instance=ExtResource("2_tmfn4")]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+theme_type_variation = &"SpeechButton"
+input_bind = &"option_4"
+
+[node name="pager" type="HBoxContainer" parent="controls/MarginContainer/VBoxContainer" unique_id=1978603827]
+layout_mode = 2
+alignment = 1
+
+[node name="option_4" parent="controls/MarginContainer/VBoxContainer/pager" unique_id=803538234 instance=ExtResource("2_tmfn4")]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"SpeechButton"
+input_bind = &"option_4"
+
+[node name="option_5" parent="controls/MarginContainer/VBoxContainer/pager" unique_id=403175926 instance=ExtResource("2_tmfn4")]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"SpeechButton"
+input_bind = &"option_5"

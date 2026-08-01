@@ -1,0 +1,76 @@
+{
+	"$schema": "../dialogs.schema.json",
+	"propset": "",
+	"dialog": [
+		{
+			"text": "dia3_entry1",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		},
+		{
+			"text": "dia3_entry2",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		},
+		{
+			"text": "dia3_entry3",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		},
+		{
+			"text": "dia3_entry4",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		},
+		{
+			"text": "dia3_entry5",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		},
+		{
+			"text": "dia3_entry6",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		},
+		{
+			"text": "dia3_entry7",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		},
+		{
+			"text": "dia3_entry8",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		},
+		{
+			"text": "dia3_entry9",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		},
+		{
+			"text": "dia3_entry10",
+			"speaker": "Ali",
+			"cond": [],
+			"resp": [],
+			"triggers": []
+		}
+	]
+}

@@ -1,0 +1,158 @@
+[gd_scene format=3 uid="uid://16ck1popg3qi"]
+
+[ext_resource type="Script" uid="uid://flbmdu0y8omn" path="res://scripts/ui/custom_button.gd" id="1_jwet8"]
+[ext_resource type="Shader" uid="uid://bosneny2srhwh" path="res://assets/shaders/thought.gdshader" id="2_ikrym"]
+[ext_resource type="Script" uid="uid://cumso0t3gfp75" path="res://assets/text/thought.gd" id="3_2yiwq"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_2yiwq"]
+frequency = 0.0011
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_7nvff"]
+noise = SubResource("FastNoiseLite_2yiwq")
+seamless = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dx67h"]
+shader = ExtResource("2_ikrym")
+shader_parameter/textureNoise = SubResource("NoiseTexture2D_7nvff")
+shader_parameter/radius = 0.44800002128
+shader_parameter/effectControl = 0.250000011875
+shader_parameter/burnSpeed = 0.062000002945
+shader_parameter/shape = 0.5270000250325
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2yiwq"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_7nvff"]
+script = ExtResource("3_2yiwq")
+metadata/_custom_type_script = "uid://cumso0t3gfp75"
+
+[node name="thought" type="BaseButton" unique_id=838893803]
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 2
+auto_translate_mode = 0
+editor_description = ""
+visible = true
+modulate = Color(1, 1, 1, 1)
+self_modulate = Color(1, 1, 1, 1)
+show_behind_parent = false
+top_level = false
+clip_children = 0
+light_mask = 1
+visibility_layer = 1
+z_index = 0
+z_as_relative = true
+y_sort_enabled = false
+texture_filter = 0
+texture_repeat = 0
+material = null
+use_parent_material = false
+clip_contents = false
+custom_minimum_size = Vector2(200, 50)
+layout_direction = 0
+layout_mode = 3
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 184.0
+offset_bottom = 59.0
+grow_horizontal = 1
+grow_vertical = 1
+rotation = 0.0
+scale = Vector2(1, 1)
+pivot_offset = Vector2(0, 0)
+pivot_offset_ratio = Vector2(0, 0)
+size_flags_horizontal = 1
+size_flags_vertical = 1
+size_flags_stretch_ratio = 1.0
+localize_numeral_system = true
+tooltip_text = ""
+tooltip_auto_translate_mode = 0
+focus_neighbor_left = NodePath("")
+focus_neighbor_top = NodePath("")
+focus_neighbor_right = NodePath("")
+focus_neighbor_bottom = NodePath("")
+focus_next = NodePath("")
+focus_previous = NodePath("")
+focus_mode = 2
+focus_behavior_recursive = 0
+mouse_filter = 0
+mouse_behavior_recursive = 0
+mouse_force_pass_scroll_events = true
+mouse_default_cursor_shape = 0
+accessibility_name = ""
+accessibility_description = ""
+accessibility_live = 0
+accessibility_controls_nodes = Array[NodePath]([])
+accessibility_described_by_nodes = Array[NodePath]([])
+accessibility_labeled_by_nodes = Array[NodePath]([])
+accessibility_flow_to_nodes = Array[NodePath]([])
+theme = null
+theme_type_variation = &""
+disabled = false
+toggle_mode = false
+button_pressed = false
+action_mode = 1
+button_mask = 1
+keep_pressed_outside = false
+button_group = null
+shortcut = null
+shortcut_feedback = true
+shortcut_in_tooltip = true
+script = ExtResource("1_jwet8")
+metadata/_custom_type_script = "uid://flbmdu0y8omn"
+
+[node name="bg" type="PanelContainer" parent="." unique_id=781422858]
+material = SubResource("ShaderMaterial_dx67h")
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_2yiwq")
+
+[node name="label" type="RichTextLabel" parent="." unique_id=14926172]
+clip_contents = false
+layout_direction = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.125
+anchor_top = 0.5
+anchor_right = 0.875
+anchor_bottom = 0.5
+offset_right = -1.5258789e-05
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_colors/default_color = Color(0.875, 0.875, 0.875, 1)
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+tab_size = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+custom_effects = [SubResource("RichTextEffect_7nvff")]
+
+[node name="Timer" type="Timer" parent="." unique_id=921145595]
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]

@@ -1,223 +1,224 @@
 {
+	"$schema": "../dialogs.schema.json",
 	"propset": "",
 	"dialog": [
 		{
 			"text": "dia15_entry1",
-			"name": "Noa",
-			"speaker": "noa",
+			"speaker": "Noa",
 			"cond": [],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry2",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry3",
-			"name": "Noa",
-			"speaker": "noa",
+			"speaker": "Noa",
 			"cond": [],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry4",
-			"name": "Ali",
-			"speaker": "",
+			"speaker": "Ali",
 			"cond": [],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry5",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry6",
-			"name": "Ali",
-			"speaker": "",
+			"speaker": "Ali",
 			"cond": [],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry7",
-			"name": "Ali",
-			"speaker": "",
+			"speaker": "Ali",
 			"cond": [
 				"cond1_or_cond2"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry8",
-			"name": "Ali",
-			"speaker": "",
+			"speaker": "Ali",
 			"cond": [
 				"1c"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry9",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry10",
-			"name": "Ali",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry11",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [
 				"1a"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry12",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [
 				"1a"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry13",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [
 				"1a"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry14",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [
 				"1a"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry15",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [
 				"1a"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry16",
-			"name": "Noa",
-			"speaker": "noa",
+			"speaker": "Noa",
 			"cond": [
 				"1a"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry17",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [
 				"1a"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry18",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [
 				"1a"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry19",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [
 				"cond1_or_cond2"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry20",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [
 				"cond1_or_cond2"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry21",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [
 				"cond1_or_cond2"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry22",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [
 				"cond1_or_cond2"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry23",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [
 				"cond1_or_cond2"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry24",
-			"name": "Noa",
-			"speaker": "noa",
+			"speaker": "Noa",
 			"cond": [
 				"cond1_or_cond2"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry25",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [
 				"cond1_or_cond2"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		},
 		{
 			"text": "dia15_entry26",
-			"name": "Conchita",
-			"speaker": "conchita",
+			"speaker": "Conchita",
 			"cond": [
 				"cond1_or_cond2"
 			],
-			"resp": []
+			"resp": [],
+			"triggers": []
 		}
 	]
 }

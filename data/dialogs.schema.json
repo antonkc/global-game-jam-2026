@@ -1,0 +1,91 @@
+{
+	"definitions": {
+		"prop_set": {
+			"type": "string",
+			"enum": [
+				""
+			]
+		},
+		"game_text": {
+			"type": "string",
+			"enum": [
+				""
+			]
+		},
+		"game_condition": {
+			"type": "string",
+			"enum": [
+				""
+			]
+		},
+		"triggers": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		}
+	},
+	"type": "object",
+	"properties": {
+		"propset": {
+			"$ref": "#/definitions/prop_set"
+		},
+		"dialog": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"description": "Dialog entry",
+				"properties": {
+					"text": {
+						"$ref": "#/definitions/game_text"
+					},
+					"speaker": {
+						"type": "string",
+						"description": "name of the speaker"
+					},
+					"cond": {
+						"type": "array",
+						"items": {
+							"$ref": "#/definitions/game_condition"
+						},
+						"additionalItems": false
+					},
+					"resp": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"properties": {
+								"text": {
+									"type": "string"
+								},
+								"eff": {
+									"type": "array",
+									"items": {
+										"$ref": "#/definitions/game_condition"
+									},
+									"additionalItems": false
+								},
+								"cond": {
+									"type": "array",
+									"items": {
+										"$ref": "#/definitions/game_condition"
+									},
+									"additionalItems": false
+								},
+								"triggers": {
+									"$ref": "#/definitions/triggers"
+								}
+							},
+							"additionalProperties": false
+						}
+					},
+					"triggers": {
+						"$ref": "#/definitions/triggers"
+					},
+					"additionalProperties": false
+				}
+			}
+		},
+		"additionalProperties": false
+	}
+}

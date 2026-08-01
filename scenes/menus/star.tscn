@@ -1,0 +1,250 @@
+[gd_scene format=3 uid="uid://b857chh78k0fl"]
+
+[ext_resource type="Texture2D" uid="uid://o0hmpiiu4dpd" path="res://assets/imgs/props/star_00.png" id="1_cvfal"]
+[ext_resource type="PackedScene" uid="uid://bmtc7uvn8hoa5" path="res://scenes/menus/clickable_area.tscn" id="1_jwf60"]
+[ext_resource type="Texture2D" uid="uid://dcesdscxxxgop" path="res://assets/imgs/props/star_01.png" id="2_jwf60"]
+[ext_resource type="Shader" uid="uid://bpklikj6uxgyl" path="res://assets/shaders/star.gdshader" id="2_u0vfv"]
+[ext_resource type="Texture2D" uid="uid://o4l8fpvyik56" path="res://assets/imgs/props/star_02.png" id="3_u0vfv"]
+[ext_resource type="Texture2D" uid="uid://b7m3aobviwb3q" path="res://assets/imgs/props/star_03.png" id="4_2div6"]
+[ext_resource type="Texture2D" uid="uid://c6bmpc3npfvrq" path="res://assets/imgs/props/star_04.png" id="5_qnim5"]
+[ext_resource type="Texture2D" uid="uid://dgnskveme2huf" path="res://assets/imgs/props/star_05.png" id="6_srm34"]
+
+[sub_resource type="GDScript" id="GDScript_u0vfv"]
+script/source = "extends Control
+
+@onready var star_area: Control = $star_area
+
+var action: Callable = __default_action:
+	set(new_fn):
+		if new_fn == null:
+			action = __default_action
+		else:
+			action = new_fn
+
+func __default_action():
+	print(\"star '%s' acted!\" % self.get_path())
+"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_u0vfv"]
+noise_type = 2
+frequency = 0.105
+cellular_distance_function = 2
+cellular_jitter = 0.5
+cellular_return_type = 0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_2div6"]
+width = 64
+height = 64
+noise = SubResource("FastNoiseLite_u0vfv")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2div6"]
+shader = ExtResource("2_u0vfv")
+shader_parameter/textureNoise = SubResource("NoiseTexture2D_2div6")
+shader_parameter/radius = 0.459
+shader_parameter/effectControl = 0.309
+shader_parameter/burnSpeed = 0.050000002375
+shader_parameter/shape = 0.0
+shader_parameter/color = Vector4(0, 0, 0, 0.125)
+
+[sub_resource type="GDScript" id="GDScript_jwf60"]
+script/source = "@tool
+extends ClickableArea
+
+@export var animation_duration: float = 6.0
+@export var curve_00: Curve
+@export var curve_01: Curve
+@export var curve_02: Curve
+@export var curve_03: Curve
+@export var curve_04: Curve
+@export var curve_05: Curve
+
+@onready var tween_00: Tween = create_tween().set_loops()
+@onready var tween_01: Tween = create_tween().set_loops()
+@onready var tween_02: Tween = create_tween().set_loops()
+@onready var tween_03: Tween = create_tween().set_loops()
+@onready var tween_04: Tween = create_tween().set_loops()
+@onready var tween_05: Tween = create_tween().set_loops()
+
+var action: Callable = __default_action:
+	set(new_fn):
+		if new_fn == null:
+			action = __default_action
+		else:
+			action = new_fn
+
+func _ready() -> void:
+	tween_00.tween_property($star00, \"rotation_degrees\", 360, animation_duration).from(0).set_custom_interpolator(_interpolation_00)
+	tween_01.tween_property($star01, \"rotation_degrees\", 360, animation_duration).from(0).set_custom_interpolator(_interpolation_01)
+	tween_02.tween_property($star02, \"rotation_degrees\", 360, animation_duration).from(0).set_custom_interpolator(_interpolation_02)
+	tween_03.tween_property($star03, \"rotation_degrees\", 360, animation_duration).from(0).set_custom_interpolator(_interpolation_03)
+	tween_04.tween_property($star04, \"rotation_degrees\", 360, animation_duration).from(0).set_custom_interpolator(_interpolation_04)
+	tween_05.tween_property($star05, \"rotation_degrees\", 360, animation_duration).from(0).set_custom_interpolator(_interpolation_05)
+func _interpolation_00(normal: float):
+	return curve_00.sample(normal)
+func _interpolation_01(normal: float):
+	return curve_01.sample(normal)
+func _interpolation_02(normal: float):
+	return curve_02.sample(normal)
+func _interpolation_03(normal: float):
+	return curve_03.sample(normal)
+func _interpolation_04(normal: float):
+	return curve_04.sample(normal)
+func _interpolation_05(normal: float):
+	return curve_05.sample(normal)
+
+func click_action() -> void:
+	action.call()
+func hover_action() -> void: # Remember to call hover_end action if needed
+	tween_00.set_speed_scale(5)
+	tween_01.set_speed_scale(5)
+	tween_02.set_speed_scale(5)
+	tween_03.set_speed_scale(5)
+	tween_04.set_speed_scale(5)
+	tween_05.set_speed_scale(5)
+func hover_end_action() -> void:
+	tween_00.set_speed_scale(1)
+	tween_01.set_speed_scale(1)
+	tween_02.set_speed_scale(1)
+	tween_03.set_speed_scale(1)
+	tween_04.set_speed_scale(1)
+	tween_05.set_speed_scale(1)
+
+func __default_action():
+	print(\"%s acted!\" % self.get_path())
+"
+
+[sub_resource type="Curve" id="Curve_u0vfv"]
+_limits = [-0.25, 1.25, 0.0, 1.0]
+_data = [Vector2(0, 0), 0.0, -5.815119, 0, 0, Vector2(0.15, 0.1), -1.7649093, -1.7649093, 0, 0, Vector2(0.5, 0.5), 0.0, 0.0, 0, 0, Vector2(0.6, 0.9), -1.7459432, -1.7459432, 0, 0, Vector2(1, 1), -5.8893757, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="Curve" id="Curve_2div6"]
+_limits = [-0.25, 1.25, 0.0, 1.0]
+_data = [Vector2(0, 0), 0.0, -5.815119, 0, 0, Vector2(0.2, 0.1), -1.7649093, -1.7649093, 0, 0, Vector2(0.5, 0.5), 0.0, 0.0, 0, 0, Vector2(0.65, 0.9), -1.7459432, -1.7459432, 0, 0, Vector2(1, 1), -5.8893757, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="Curve" id="Curve_qnim5"]
+_limits = [-0.25, 1.25, 0.0, 1.0]
+_data = [Vector2(0, 0), 0.0, -5.815119, 0, 0, Vector2(0.25, 0.1), -1.7649093, -1.7649093, 0, 0, Vector2(0.5, 0.5), 0.0, 0.0, 0, 0, Vector2(0.7, 0.9), -1.7459432, -1.7459432, 0, 0, Vector2(1, 1), -5.8893757, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="Curve" id="Curve_srm34"]
+_limits = [-0.25, 1.25, 0.0, 1.0]
+_data = [Vector2(0, 0), 0.0, -5.815119, 0, 0, Vector2(0.3, 0.1), -1.7649093, -1.7649093, 0, 0, Vector2(0.5, 0.5), 0.0, 0.0, 0, 0, Vector2(0.75, 0.9), -1.7459432, -1.7459432, 0, 0, Vector2(1, 1), -5.8893757, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="Curve" id="Curve_2nfm0"]
+_limits = [-0.25, 1.25, 0.0, 1.0]
+_data = [Vector2(0, 0), 0.0, -5.815119, 0, 0, Vector2(0.35, 0.1), -1.7649093, -1.7649093, 0, 0, Vector2(0.5, 0.5), 0.0, 0.0, 0, 0, Vector2(0.8, 0.9), -1.7459432, -1.7459432, 0, 0, Vector2(1, 1), -5.8893757, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="Curve" id="Curve_jwf60"]
+_limits = [-0.25, 1.25, 0.0, 1.0]
+_data = [Vector2(0, 0), 0.0, -5.815119, 0, 0, Vector2(0.4, 0.1), -1.7649093, -1.7649093, 0, 0, Vector2(0.5, 0.5), 0.0, 0.0, 0, 0, Vector2(0.85, 0.9), -1.7459432, -1.7459432, 0, 0, Vector2(1, 1), -5.8893757, 0.0, 0, 0]
+point_count = 5
+
+[node name="Star" type="Control" unique_id=2088686795]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_filter = 1
+script = SubResource("GDScript_u0vfv")
+
+[node name="star_area" parent="." unique_id=93127149 instance=ExtResource("1_jwf60")]
+material = SubResource("ShaderMaterial_2div6")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_jwf60")
+animation_duration = 30.0
+curve_00 = SubResource("Curve_u0vfv")
+curve_01 = SubResource("Curve_2div6")
+curve_02 = SubResource("Curve_qnim5")
+curve_03 = SubResource("Curve_srm34")
+curve_04 = SubResource("Curve_2nfm0")
+curve_05 = SubResource("Curve_jwf60")
+
+[node name="star00" type="TextureRect" parent="star_area" unique_id=1473499844]
+use_parent_material = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.9009607
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("1_cvfal")
+expand_mode = 1
+
+[node name="star01" type="TextureRect" parent="star_area" unique_id=1587294243]
+use_parent_material = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.5367246
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("2_jwf60")
+expand_mode = 3
+
+[node name="star02" type="TextureRect" parent="star_area" unique_id=1139505045]
+use_parent_material = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.3880095
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("3_u0vfv")
+expand_mode = 3
+
+[node name="star03" type="TextureRect" parent="star_area" unique_id=2084810658]
+use_parent_material = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.3126438
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("4_2div6")
+expand_mode = 3
+
+[node name="star04" type="TextureRect" parent="star_area" unique_id=1106659608]
+use_parent_material = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.2689104
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("5_qnim5")
+expand_mode = 3
+
+[node name="star05" type="TextureRect" parent="star_area" unique_id=1991496359]
+use_parent_material = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.241093
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("6_srm34")
+expand_mode = 3
